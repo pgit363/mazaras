@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Travel Point - Travel, Tour Booking HTML5 Template</title>
+    <!-- favicon -->
+    <link rel=icon href="assets/img/favicon.png" sizes="20x20" type="image/png">
+    <!-- Additional plugin css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
+    <!-- icons -->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- responsive css -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+    <!-- preloader area start -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="spinner">
+                <div class="dot1"></div>
+                <div class="dot2"></div>
+            </div>
+        </div>
+    </div>
+    <!-- preloader area end -->
+    <!-- search popup start -->
+    <div class="body-overlay" id="body-overlay"></div>
+    <div class="search-popup" id="search-popup">
+        <form action="http://zwin.io/html/viaje/index.html" class="search-form">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search.....">
+            </div>
+            <button type="submit" class="submit-btn"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+    <!-- search popup End -->
+    <!-- //. sign up Popup -->
+    <div class="signUp-popup login-register-popup" id="signUp-popup">
+        <div class="login-register-popup-wrap">
+            <div class="row no-gutters">
+                <div class="col-lg-6">
+                    <div class="thumb">
+                        <img src="assets/img/others/signup.png" alt="img">
+                    </div>
+                </div>
+                <div class="col-lg-6 align-self-center">
+                    <div class="shape-thumb">
+                        <img src="assets/img/others/signup-shape.png" alt="img">
+                    </div>
+                    <form class="login-form-wrap">
+                        <h4 class="text-center">Sign Up</h4>
+                        <div class="single-input-wrap style-two">
+                            <input type="text" placeholder="Name">
+                            <span class="single-input-title"><i class="fa fa-user"></i></span>
+                        </div>
+                        <div class="single-input-wrap style-two">
+                            <input type="text" placeholder="Email">
+                            <span class="single-input-title"><i class="fa fa-envelope"></i></span>
+                        </div>
+                        <div class="single-input-wrap style-two">
+                            <input type="text" placeholder="Password">
+                            <span class="single-input-title"><i class="fa fa-lock"></i></span>
+                        </div>
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            <span>Remember me</span>
+                        </label>
+                        <div class="single-input-wrap style-two">
+                            <button class="btn btn-yellow w-100">Sign Up</button>
+                        </div>
+                        <div class="sign-in-btn">I already have an account. <a href="#">Sign In</a></div>
+                        <div class="social-wrap">
+                            <p>Or Continue With</p>
+                            <ul class="social-icon">
+                                <li>
+                                    <a class="facebook" href="#" target="_blank"><i class="fa fa-facebook  "></i></a>
+                                </li>
+                                <li>
+                                    <a class="twitter" href="#" target="_blank"><i class="fa fa-twitter  "></i></a>
+                                </li>
+                                <li>
+                                    <a class="pinterest" href="#" target="_blank"><i class="fa fa-pinterest"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //. sign up Popup End -->
+    <!-- navbar area start -->
+    <div class="top-navbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 topbar-contact-wrap">
+                    <div class="topbar-contact">
+                        <i class="fa fa-phone"></i>
+                        <span class="title">Support:</span>
+                        <span class="number">(+91) 7710906345</span>
+                    </div>
+
+                </div>
+                <div class="col-lg-6">
+                    <div class="nav-right-content float-right">
+                        <div class="social-wrap">
+                            <!-- <p>Or Continue With</p> -->
+                            <ul class="social-icon">
+                                <li>
+                                    <a class="facebook" href="#" target="_blank"><i class="fa fa-facebook  "></i></a>
+                                </li>
+                                <li>
+                                    <a class="twitter" href="#" target="_blank"><i class="fa fa-twitter  "></i></a>
+                                </li>
+                                <li>
+                                    <a class="pinterest" href="#" target="_blank"><i class="fa fa-pinterest"></i></a>
+                                </li>
+                                <li>
+                                    <a class="pinterest" href="#" target="_blank"><i class="fa fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-area navbar-expand-lg nav-style-03">
+        <div class="container nav-container">
+            <div class="responsive-mobile-menu">
+                <div class="mobile-logo">
+                    <a href="index-2.html">
+                        <img src="assets/img/3.png" alt="logo">
+                    </a>
+                </div>
+                <button class="navbar-toggler float-right" type="button" data-toggle="collapse"
+                    data-target="#tp_main_menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggle-icon">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </span>
+                </button>
+                <div class="nav-right-content">
+                    <ul class="pl-0">
+                        <li class="top-bar-btn-booking">
+                            <a class="btn btn-yellow" href="tour-details.html">Book Now <i
+                                    class="fa fa-paper-plane"></i></a>
+                        </li>
+                        <li class="tp-lang">
+                            <div class="tp-lang-wrap">
+                                <select class="select single-select">
+                                    <option value="1">ENG</option>
+                                    <option value="2">BAN</option>
+                                    <option value="3">Chinese</option>
+                                    <option value="3">Spanish</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li class="search">
+                            <i class="ti-search"></i>
+                        </li>
+                        <li class="notification">
+                            <a class="signUp-btn" href="#">
+                                <i class="fa fa-user-o"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="tp_main_menu">
+                <div class="logo-wrapper desktop-logo">
+                    <a href="index-2.html" class="main-logo">
+                        <img src="assets/img/3.png" style="max-width: 100px;" alt="logo">
+                    </a>
+                    <a href="index-2.html" class="sticky-logo">
+                        <img src="assets/img/1.png" style="max-width: 80px;" alt="logo">
+                    </a>
+                </div>
+                <ul class="navbar-nav">
+                    <li>
+                        <a href="home04.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About Us</a>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="#">Services</a>
+                        <ul class="sub-menu">
+                            <li><a href="tour-list.html">Tours List</a></li>
+                            <li><a href="tour-list02.html">Tours List 02</a></li>
+                            <li><a href="tour-list03.html">Tours List 03</a></li>
+                            <li><a href="tour-details.html">Tours Details</a></li>
+                            <li><a href="destination-list.html">Destination List</a></li>
+                            <li><a href="destination-list02.html">Destination List 2</a></li>
+                            <li><a href="destination-details.html">Destination Details</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="gallery-details.html">Gallery Details</a></li>
+                            <li><a href="comming-soon.html">Comming soon</a></li>
+                            <li><a href="404.html">404</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="user-profile.html">User Profile</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="faq.html">FAQ's</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-right-content">
+                <ul>
+                    <li class="pr-0">
+                        <!-- <a class="btn btn-yellow" href="tour-details.html">Book Now <i class="fa fa-paper-plane"></i></a> -->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar area end -->
+    <!-- banner area start -->
+    <div class="banner-area">
+        <div class="banner-slider banner-slider-3">
+            <div class="banner-slider-item jarallax" style="background-image: url(assets/img/banner/13.jpg);">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-8 col-lg-9">
+                            <div class="row">
+                                <div class="col-lg-9 col-sm-8">
+                                    <div class="banner-inner">
+                                        <p class="banner-cat s-animate-1">Discover</p>
+                                        <h2 class="banner-title s-animate-2">Alaska</h2>
+                                        <p class="content s-animate-3">Iceland, a Nordic island nation, Iceland is
+                                            defined by its dramatic landscape with volcanoes, Iceland geysers, Iceland
+                                            hot springs and lava fields is here.</p>
+                                        <a class="btn btn-yellow s-animate-4" href="#">Explore</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-4">
+                                    <div class="video-popup-btn s-animate-video">
+                                        <a href="https://www.youtube.com/watch?v=c7XEhXZ_rsk"
+                                            class="video-play-btn mfp-iframe"><i class="fa fa-play"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-slider-item jarallax" style="background-image: url(assets/img/banner/11.jpg);">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-8 col-lg-9">
+                            <div class="row">
+                                <div class="col-lg-9 col-sm-8">
+                                    <div class="banner-inner">
+                                        <p class="banner-cat s-animate-1">Discover</p>
+                                        <h2 class="banner-title s-animate-2">Norway</h2>
+                                        <p class="content s-animate-3">Iceland, a Nordic island nation, is defined by
+                                            its dramatic landscape with volcanoes, geysers, hot springs and lava fields.
+                                        </p>
+                                        <a class="btn btn-yellow s-animate-4" href="#">Explore</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-4">
+                                    <div class="video-popup-btn s-animate-video">
+                                        <a href="https://www.youtube.com/watch?v=c7XEhXZ_rsk"
+                                            class="video-play-btn mfp-iframe"><i class="fa fa-play"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-slider-item jarallax" style="background-image: url(assets/img/banner/12.jpg);">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-8 col-lg-9">
+                            <div class="row">
+                                <div class="col-lg-9 col-sm-8">
+                                    <div class="banner-inner">
+                                        <p class="banner-cat s-animate-1">Hot Places</p>
+                                        <h2 class="banner-title s-animate-2">Iceland</h2>
+                                        <p class="content s-animate-3">Iceland, a Nordic island nation, is defined by
+                                            its dramatic landscape with volcanoes, geysers, hot springs and lava fields.
+                                        </p>
+                                        <a class="btn btn-yellow s-animate-4" href="#">Explore</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-4">
+                                    <div class="video-popup-btn s-animate-video">
+                                        <a href="https://www.youtube.com/watch?v=c7XEhXZ_rsk"
+                                            class="video-play-btn mfp-iframe"><i class="fa fa-play"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="container">  -->
+        <div class="banner-paginations banner-paginations-3">
+            <div class="banner-slider-dots"></div>
+        </div>
+        <!-- </div> -->
+        <div class="container">
+            <div class="banner-slider-controls">
+                <div class="slider-nav tp-control-nav"></div>
+            </div>
+        </div>
+    </div>
+    <!-- banner area end -->
+    <!-- search area start -->
+    <div class="search-area tp-main-search-area tp-main-search-3">
+        <div class="container">
+            <div class="tp-main-search">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4">
+                        <div class="tp-search-single-wrap">
+                            <input class="w-100" type="text" placeholder="Bangladesh,Dhaka">
+                            <i class="ti-location-pin"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4">
+                        <div class="tp-search-single-wrap">
+                            <input class="w-100" type="text" placeholder="Where From?">
+                            <i class="fa fa-dot-circle-o"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 order-lg-9">
+                        <div class="tp-search-single-wrap float-left w-100">
+                            <select class="select w-100">
+                                <option value="1">Travel Type</option>
+                                <option value="2">Event Travel</option>
+                                <option value="3">Weekend Break</option>
+                                <option value="4">Package Holiday</option>
+                                <option value="5">Business Travel</option>
+                            </select>
+                            <i class="fa fa-plus-circle"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-8 order-lg-6">
+                        <div class="tp-search-single-wrap float-left">
+                            <div class="tp-search-date tp-departing-date-wrap w-50 float-left">
+                                <input type="text" class="departing-date" placeholder="Departing">
+                                <i class="fa fa-calendar-minus-o"></i>
+                            </div>
+                            <div class="tp-search-date tp-returning-date-wrap w-50 float-left">
+                                <input type="text" class="returning-date" placeholder="Returning">
+                                <img src="assets/img/icons/2.png" alt="icons">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 order-12">
+                        <a class="btn btn-yellow" href="#"><i class="ti-search"></i> Search</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- travelus area start -->
+    <!-- intro area start -->
+    <div class="intro-area pd-top-108">
+        <div class="container">
+            <div class="section-title text-lg-center text-left">
+                <h2 class="title"><span>We Are</span> Travel Point</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-intro style-two">
+                        <div class="thumb">
+                            <img src="assets/img/icons/9.png" alt="img">
+                        </div>
+                        <h4 class="intro-title">Private Transport</h4>
+                        <p>Sponsorships are like unicorns or leprechauns, talked about often but they don’t exist. There
+                            is one dollars</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-intro style-two">
+                        <div class="thumb">
+                            <img src="assets/img/icons/10.png" alt="img">
+                        </div>
+                        <h4 class="intro-title">Diverse Destinations</h4>
+                        <p>My response usually harsh. Offended at the that a career that’s taken more than a decade to
+                            create could be</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-intro style-two">
+                        <div class="thumb">
+                            <img src="assets/img/icons/11.png" alt="img">
+                        </div>
+                        <h4 class="intro-title">Great Hotels</h4>
+                        <p>I have always made a living to make movies, never the other way around.I first I washed
+                            dishes in a seafood</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="single-intro style-two">
+                        <div class="thumb">
+                            <img src="assets/img/icons/12.png" alt="img">
+                        </div>
+                        <h4 class="intro-title">Fast Booking</h4>
+                        <p>Aenean sed nibh a magna posuere tempor. Nunc faucibus nunc aliquet. Donec congue, nunc vel
+                            tempor</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- intro area End -->
+    <!-- video area start -->
+    <div class="video-area tp-video-area pd-top-110" style="background-image: url(assets/img/bg/7.png);">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5 col-lg-6 align-self-center wow animated fadeInRight" data-wow-duration="1s"
+                    data-wow-delay="0.3s">
+                    <div class="section-title mb-lg-0 mb-4 text-center text-lg-left">
+                        <h2 class="title">What Do You Know <br> About US</h2>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text ever since the 1500s, when unknown printer took a
+                            galley of type and scrambled it to make a type specimen book. It has not only five centuries
+                        </p>
+                        <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-lg-6 offset-xl-1 wow animated fadeInLeft" data-wow-duration="1s"
+                    data-wow-delay="0.3s">
+                    <div class="video-popup-wrap">
+                        <div class="thumb">
+                            <img src="assets/img/video.png" alt="video">
+                        </div>
+                        <div class="video-popup-btn">
+                            <a href="https://www.youtube.com/watch?v=c7XEhXZ_rsk" class="video-play-btn mfp-iframe"><i
+                                    class="fa fa-play"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- video area end -->
+    <!-- blog area start -->
+    <div class="blog-area pd-top-120">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="single-blog single-blog-wrap style-two">
+                        <div class="thumb single-blog-left-wrap">
+                            <img src="assets/img/blog/10.png" alt="blog">
+                        </div>
+                        <div class="single-blog-details single-blog-right-wrap">
+                            <a class="tag" href="#">Europe</a>
+                            <p class="date">19 September 2019</p>
+                            <h4 class="title">Why You Shouldn’t Ride Elephants In France.</h4>
+                            <p class="content">Kava contains 30 demos as for now, and we’re planning to release more!
+                                Except demos, Kava theme has more and more features for.. users, business, companies,
+                                developers, bloggers and other categories of users. Even if you are an absolute beginner
+                            </p>
+                            <a class="btn btn-yellow" href="#"><span>Read More<i
+                                        class="la la-arrow-right"></i></span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="single-blog style-three">
+                                <div class="thumb">
+                                    <img src="assets/img/blog/11.png" alt="blog">
+                                </div>
+                                <div class="single-blog-details-wrap">
+                                    <div class="single-blog-details text-center">
+                                        <a class="tag" href="#">Europe</a>
+                                        <p class="date">19 September 2019</p>
+                                        <h4 class="title">Why You Shouldn’t Ride Elephants In Thailand</h4>
+                                        <a class="btn btn-yellow" href="#"><span>Read More<i
+                                                    class="la la-arrow-right"></i></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="single-blog style-three">
+                                <div class="thumb">
+                                    <img src="assets/img/blog/12.png" alt="blog">
+                                </div>
+                                <div class="single-blog-details-wrap">
+                                    <div class="single-blog-details text-center">
+                                        <a class="tag" href="#">Europe</a>
+                                        <p class="date">18 September 2019</p>
+                                        <h4 class="title">10 Best Highways for Romantic Long Drive</h4>
+                                        <a class="btn btn-yellow" href="#"><span>Read More<i
+                                                    class="la la-arrow-right"></i></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="single-blog style-three">
+                                <div class="thumb">
+                                    <img src="assets/img/blog/13.png" alt="blog">
+                                </div>
+                                <div class="single-blog-details-wrap">
+                                    <div class="single-blog-details text-center">
+                                        <a class="tag" href="#">Europe</a>
+                                        <p class="date">18 September 2019</p>
+                                        <h4 class="title">Rock Climbing Limestone Cliffs At Railay Beach</h4>
+                                        <a class="btn btn-yellow" href="#"><span>Read More<i
+                                                    class="la la-arrow-right"></i></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="single-blog style-three">
+                                <div class="thumb">
+                                    <img src="assets/img/blog/14.png" alt="blog">
+                                </div>
+                                <div class="single-blog-details-wrap">
+                                    <div class="single-blog-details text-center">
+                                        <a class="tag" href="#">Europe</a>
+                                        <p class="date">19 September 2019</p>
+                                        <h4 class="title">Magic In The Sky: Chasing Iceland’s Lights</h4>
+                                        <a class="btn btn-yellow" href="#"><span>Read More<i
+                                                    class="la la-arrow-right"></i></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- blog area End -->
+    <!-- client area start -->
+    <div class="client-area pd-top-108">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-6 col-lg-8">
+                    <div class="section-title text-center">
+                        <h2 class="title">What Our Clicnts Say</h2>
+                        <p>Vivamus eget aliquam dui. Integer eu arcu vel arcu suscipit ultrices quis non mauris. Aenean
+                            scelerisque, sem eu dictum commodo, velit nisi blandit magna</p>
+                    </div>
+                </div>
+            </div>
+            <div class="client-slider tp-common-slider-style">
+                <div class="single-client-card">
+                    <div class="quote"><i class="ti-quote-left"></i></div>
+                    <p class="content-text">The largest country in the world, Russia offers a broad array of travel
+                        experiences, from treks up the slopes of glacier-capped mountains to strolls along the shoreline
+                        of Earth’s oldest lake. Historical sites and cultural</p>
+                    <div class="media">
+                        <div class="media-left">
+                            <img src="assets/img/blog-details/11.png" alt="img">
+                        </div>
+                        <div class="media-body">
+                            <h4>Jasmine Woodkin</h4>
+                            <span>TOURIST</span>
+                            <span class="tp-review-meta">
+                                <i class="ic-yellow fa fa-star"></i>
+                                <i class="ic-yellow fa fa-star"></i>
+                                <i class="ic-yellow fa fa-star"></i>
+                                <i class="ic-yellow fa fa-star"></i>
+                                <i class="ic-yellow fa fa-star"></i>
+                                <span>4.0</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-client-card">
+                    <div class="quote"><i class="ti-quote-left"></i></div>
+                    <p class="content-text">The largest country in the world, Russia offers a broad array of travel
+                        experiences, from treks up the slopes of glacier-capped mountains to strolls along the shoreline
+                        of Earth’s oldest lake. Historical sites and cultural</p>
+                    <div class="media">
+                        <div class="media-left">
+                            <img src="assets/img/blog-details/10.png" alt="img">
+                        </div>
+                        <div class="media-body">
+                            <h4>Woodkin Jack</h4>
+                            <span>TOURIST</span>
+                            <span class="tp-review-meta">
+                                <i class="ic-yellow fa fa-star"></i>
+                                <i class="ic-yellow fa fa-star"></i>
+                                <i class="ic-yellow fa fa-star"></i>
+                                <i class="ic-yellow fa fa-star"></i>
+                                <i class="ic-yellow fa fa-star"></i>
+                                <span>4.0</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-client-card">
+                    <div class="quote"><i class="ti-quote-left"></i></div>
+                    <p class="content-text">The largest country in the world, Russia offers a broad array of travel
+                        experiences, from treks up the slopes of glacier-capped mountains to strolls along the shoreline
+                        of Earth’s oldest lake. Historical sites and cultural</p>
+                    <div class="media">
+                        <div class="media-left">
+                            <img src="assets/img/blog-details/9.png" alt="img">
+                        </div>
+                        <div class="media-body">
+                            <h4>Rafayel Gee</h4>
+                            <span>TOURIST</span>
+                            <span class="tp-review-meta">
+                                <i class="ic-yellow fa fa-star"></i>
+                                <i class="ic-yellow fa fa-star"></i>
+                                <i class="ic-yellow fa fa-star"></i>
+                                <i class="ic-yellow fa fa-star"></i>
+                                <i class="ic-yellow fa fa-star"></i>
+                                <span>4.0</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-client-card">
+                    <div class="quote"><i class="ti-quote-left"></i></div>
+                    <p class="content-text">The largest country in the world, Russia offers a broad array of travel
+                        experiences, from treks up the slopes of glacier-capped mountains to strolls along the shoreline
+                        of Earth’s oldest lake. Historical sites and cultural</p>
+                    <div class="media">
+                        <div class="media-left">
+                            <img src="assets/img/blog-details/10.png" alt="img">
+                        </div>
+                        <div class="media-body">
+                            <h4>Thomsa Doe</h4>
+                            <span>TOURIST</span>
+                            <span class="tp-review-meta">
+                                <i class="ic-yellow fa fa-star"></i>
+                                <i class="ic-yellow fa fa-star"></i>
+                                <i class="ic-yellow fa fa-star"></i>
+                                <i class="ic-yellow fa fa-star"></i>
+                                <i class="ic-yellow fa fa-star"></i>
+                                <span>4.0</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- blog area End -->
+    <!-- instagram area start -->
+    <div class="instagram-area pd-top-100">
+        <div class="section-title text-center">
+            <h2 class="title">Instagram Post</h2>
+        </div>
+        <div class="instagram-slider">
+            <div class="instagram-slider-item"><a href="#"><img src="assets/img/tour/1.png" alt="img"></a></div>
+            <div class="instagram-slider-item"><a href="#"><img src="assets/img/tour/2.png" alt="img"></a></div>
+            <div class="instagram-slider-item"><a href="#"><img src="assets/img/tour/3.png" alt="img"></a></div>
+            <div class="instagram-slider-item"><a href="#"><img src="assets/img/tour/4.png" alt="img"></a></div>
+            <div class="instagram-slider-item"><a href="#"><img src="assets/img/tour/5.png" alt="img"></a></div>
+            <div class="instagram-slider-item"><a href="#"><img src="assets/img/tour/6.png" alt="img"></a></div>
+            <div class="instagram-slider-item"><a href="#"><img src="assets/img/tour/1.png" alt="img"></a></div>
+        </div>
+    </div>
+    <!-- instagram area end -->
+    <!-- footer area start -->
+    <footer class="footer-area style-three" style="background-image: url(assets/img/bg/2.png);">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="about_us_widget text-center">
+                        <a href="index-2.html" class="footer-logo">
+                            <img src="assets/img/1.png" alt="footerlogo">
+                        </a>
+                    </div>
+                    <div class="footer-widget widget text-center">
+                        <ul class="widget_nav_menu text-center">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Destination</a></li>
+                            <li><a href="#">Tours</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="footer-widget widget text-center">
+                        <div class="widget-contact d-inline-flex">
+                            <p class="telephone text-left">
+                                <i class="fa fa-phone base-color"></i>
+                                <span>
+                                    +091 7710906345
+                                </span>
+                            </p>
+                            <p class="location text-left">
+                                <i class="fa fa-envelope-o"></i>
+                                <span>info@themanzaras.com</span>
+                            </p>
+                            <p class="text-left">
+                                <i class="fa fa-map-marker"></i>
+                                <span>Gaondevi, Thane West, Maharashtra - 400602</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-inner border-tp-solid">
+            <div class="container">
+                <div class="copyright-text text-center">
+                    &copy;The Manzaras All rights reserved. Designed & Developed <i class="fa fa-heart"></i> by <a
+                        href="http://zwin.io/" target="_blank"><span>Probyte Solution, PVT LTD</span></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer area end -->
+    <!-- back to top area start -->
+    <div class="back-to-top">
+        <span class="back-top"><i class="fa fa-angle-up"></i></span>
+    </div>
+    <!-- back to top area end -->
+    <!-- Additional plugin js -->
+    <script src="assets/js/jquery-2.2.4.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <script src="assets/js/jarallax.min.js"></script>
+    <!-- main js -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

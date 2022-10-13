@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Viaje - Travel, Tour Booking HTML5 Template</title>
+    <!-- favicon -->
+    <link rel=icon href="assets/img/favicon.png" sizes="20x20" type="image/png">
+    <!-- Additional plugin css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <!-- icons -->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- responsive css -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+    <!-- preloader area start -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="spinner">
+                <div class="dot1"></div>
+                <div class="dot2"></div>
+            </div>
+        </div>
+    </div>
+    <!-- preloader area end -->
+    <!-- search popup start -->
+    <div class="body-overlay" id="body-overlay"></div>
+    <div class="search-popup" id="search-popup">
+        <form action="http://zwin.io/html/viaje/index.html" class="search-form">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search.....">
+            </div>
+            <button type="submit" class="submit-btn"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+    <!-- search popup End -->
+    <!-- //. sign up Popup -->
+    <div class="signUp-popup login-register-popup" id="signUp-popup">
+        <div class="login-register-popup-wrap">
+            <div class="row no-gutters">
+                <div class="col-lg-6">
+                    <div class="thumb">
+                        <img src="assets/img/others/signup.png" alt="img">
+                    </div>
+                </div>
+                <div class="col-lg-6 align-self-center">
+                    <div class="shape-thumb">
+                        <img src="assets/img/others/signup-shape.png" alt="img">
+                    </div>
+                    <form class="login-form-wrap">
+                        <h4 class="text-center">Sign Up</h4>
+                        <div class="single-input-wrap style-two">
+                            <input type="text" placeholder="Name">
+                            <span class="single-input-title"><i class="fa fa-user"></i></span>
+                        </div>
+                        <div class="single-input-wrap style-two">
+                            <input type="text" placeholder="Email">
+                            <span class="single-input-title"><i class="fa fa-envelope"></i></span>
+                        </div>
+                        <div class="single-input-wrap style-two">
+                            <input type="text" placeholder="Password">
+                            <span class="single-input-title"><i class="fa fa-lock"></i></span>
+                        </div>
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            <span>Remember me</span>
+                        </label>
+                        <div class="single-input-wrap style-two">
+                            <button class="btn btn-yellow w-100">Sign Up</button>
+                        </div>
+                        <div class="sign-in-btn">I already have an account. <a href="#">Sign In</a></div>
+                        <div class="social-wrap">
+                            <p>Or Continue With</p>
+                            <ul class="social-icon">
+                                <li>
+                                    <a class="facebook" href="#" target="_blank"><i class="fa fa-facebook  "></i></a>
+                                </li>
+                                <li>
+                                    <a class="twitter" href="#" target="_blank"><i class="fa fa-twitter  "></i></a>
+                                </li>
+                                <li>
+                                    <a class="pinterest" href="#" target="_blank"><i class="fa fa-pinterest"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //. sign up Popup End -->
+    <!-- navbar area start -->
+    <nav class="navbar navbar-area navbar-expand-lg nav-style-01">
+        <div class="container nav-container">
+            <div class="responsive-mobile-menu">
+                <div class="mobile-logo">
+                    <a href="index-2.html">
+                        <img src="assets/img/3.png" alt="logo">
+                    </a>
+                </div>
+                <button class="navbar-toggler float-right" type="button" data-toggle="collapse"
+                    data-target="#tp_main_menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggle-icon">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </span>
+                </button>
+                <div class="nav-right-content">
+                    <ul class="pl-0">
+                        <li class="top-bar-btn-booking">
+                            <a class="btn btn-yellow" href="tour-details.html">Book Now <i
+                                    class="fa fa-paper-plane"></i></a>
+                        </li>
+                        <li class="tp-lang">
+                            <div class="tp-lang-wrap">
+                                <select class="select single-select">
+                                    <option value="1">ENG</option>
+                                    <option value="2">BAN</option>
+                                    <option value="3">Chinese</option>
+                                    <option value="3">Spanish</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li class="search">
+                            <i class="ti-search"></i>
+                        </li>
+                        <li class="notification">
+                            <a class="signUp-btn" href="#">
+                                <i class="fa fa-user-o"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="tp_main_menu">
+                <div class="logo-wrapper desktop-logo">
+                    <a href="index-2.html" class="main-logo">
+                        <img src="assets/img/3.png" style="max-width: 100px;" alt="logo">
+                    </a>
+                    <a href="index-2.html" class="sticky-logo">
+                        <img src="assets/img/1.png" style="max-width: 80px;" alt="logo">
+                    </a>
+                </div>
+                <ul class="navbar-nav">
+                    <li>
+                        <a href="home04.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About Us</a>
+                    </li>
+                    <li class="menu-item-has-children">
+                        <a href="#">Services</a>
+                        <ul class="sub-menu">
+                            <li><a href="tour-list.html">Tours List</a></li>
+                            <li><a href="tour-list02.html">Tours List 02</a></li>
+                            <li><a href="tour-list03.html">Tours List 03</a></li>
+                            <li><a href="tour-details.html">Tours Details</a></li>
+                            <li><a href="destination-list.html">Destination List</a></li>
+                            <li><a href="destination-list02.html">Destination List 2</a></li>
+                            <li><a href="destination-details.html">Destination Details</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li><a href="gallery-details.html">Gallery Details</a></li>
+                            <li><a href="comming-soon.html">Comming soon</a></li>
+                            <li><a href="404.html">404</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="user-profile.html">User Profile</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="faq.html">FAQ's</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-right-content">
+                <ul>
+                    <li class="pr-0">
+                        <!-- <a class="btn btn-yellow" href="tour-details.html">Book Now <i class="fa fa-paper-plane"></i></a> -->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar area end -->
+    <!-- breadcrumb area start -->
+    <div class="breadcrumb-area jarallax" style="background-image:url(assets/img/bg/1.png);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb-inner">
+                        <h1 class="page-title">FAQs</h1>
+                        <ul class="page-list">
+                            <li><a href="index-2.html">Home</a></li>
+                            <li>FAQs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- breadcrumb area End -->
+    <!-- blog area start -->
+    <div class="faq-page-area pd-top-110">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 col-lg-10">
+                    <div class="row">
+                        <div class="col-xl-8">
+                            <div class="section-title mb-0">
+                                <h2 class="title">You’ve Got Questions - We’ve Got Answers</h2>
+                                <p>Here you’ll find a number of frequently asked questions about the services and
+                                    products at The
+                                    Manzaras. If you still have questions after going through the FAQ page, please get
+                                    in touch
+                                    with us directly.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <ul class="nav nav-tabs tp-tabs">
+                                <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="tab" href="#tabs_1">General Queries</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#tabs_2">Booking & Payments</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#tabs_3">Hotels</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#tabs_4">Food</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#tabs_5">Group Tours</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#tabs_6">Customised Tours</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#tabs_7">Cancellation & Refunds</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#tabs_8">Feedback (Feedback Form)</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="tab-content faq-tab-content"
+                                style="background-image: url(assets/img/others/12.png);">
+                                <div class="tab-pane fade show active" id="tabs_1">
+                                    <div class="faq-details">
+                                        <h6>01 I have special dietary requirements – will they be catered for?</h6>
+                                        <p>We will try our very hardest to accommodate all dietary requirements but in
+                                            some out-of-the-way places it can be very difficult to guarantee. We will
+                                            let you know if there are places on your itinerary where this is the case.
+                                            Please let us know at the time of booking of any food requirements or
+                                            allergies and we’ll pass the information</p>
+                                        <h6>What will the food be like on my trip?</h6>
+                                        <p class="mb-0">Food is one of the most exciting parts of travel. There may be
+                                            some familiar fare but often you’ll be confronted with the new, interesting
+                                            and downright weird of the culinary world but we like to think of it as an
+                                            adventure for all the senses. In addition to this, our flexible itineraries
+                                            often</p>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="tabs_2">
+                                    <div class="faq-details">
+                                        <h6>02 I have special dietary requirements – will they be catered for?</h6>
+                                        <p>We will try our very hardest to accommodate all dietary requirements but in
+                                            some out-of-the-way places it can be very difficult to guarantee. We will
+                                            let you know if there are places on your itinerary where this is the case.
+                                            Please let us know at the time of booking of any food requirements or
+                                            allergies and we’ll pass the information</p>
+                                        <h6>What will the food be like on my trip?</h6>
+                                        <p class="mb-0">Food is one of the most exciting parts of travel. There may be
+                                            some familiar fare but often you’ll be confronted with the new, interesting
+                                            and downright weird of the culinary world but we like to think of it as an
+                                            adventure for all the senses. In addition to this, our flexible itineraries
+                                            often</p>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="tabs_3">
+                                    <div class="faq-details">
+                                        <h6>03 I have special dietary requirements – will they be catered for?</h6>
+                                        <p>We will try our very hardest to accommodate all dietary requirements but in
+                                            some out-of-the-way places it can be very difficult to guarantee. We will
+                                            let you know if there are places on your itinerary where this is the case.
+                                            Please let us know at the time of booking of any food requirements or
+                                            allergies and we’ll pass the information</p>
+                                        <h6>What will the food be like on my trip?</h6>
+                                        <p class="mb-0">Food is one of the most exciting parts of travel. There may be
+                                            some familiar fare but often you’ll be confronted with the new, interesting
+                                            and downright weird of the culinary world but we like to think of it as an
+                                            adventure for all the senses. In addition to this, our flexible itineraries
+                                            often</p>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="tabs_4">
+                                    <div class="faq-details">
+                                        <h6>04 I have special dietary requirements – will they be catered for?</h6>
+                                        <p>We will try our very hardest to accommodate all dietary requirements but in
+                                            some out-of-the-way places it can be very difficult to guarantee. We will
+                                            let you know if there are places on your itinerary where this is the case.
+                                            Please let us know at the time of booking of any food requirements or
+                                            allergies and we’ll pass the information</p>
+                                        <h6>What will the food be like on my trip?</h6>
+                                        <p class="mb-0">Food is one of the most exciting parts of travel. There may be
+                                            some familiar fare but often you’ll be confronted with the new, interesting
+                                            and downright weird of the culinary world but we like to think of it as an
+                                            adventure for all the senses. In addition to this, our flexible itineraries
+                                            often</p>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="tabs_5">
+                                    <div class="faq-details">
+                                        <h6>05 I have special dietary requirements – will they be catered for?</h6>
+                                        <p>We will try our very hardest to accommodate all dietary requirements but in
+                                            some out-of-the-way places it can be very difficult to guarantee. We will
+                                            let you know if there are places on your itinerary where this is the case.
+                                            Please let us know at the time of booking of any food requirements or
+                                            allergies and we’ll pass the information</p>
+                                        <h6>What will the food be like on my trip?</h6>
+                                        <p class="mb-0">Food is one of the most exciting parts of travel. There may be
+                                            some familiar fare but often you’ll be confronted with the new, interesting
+                                            and downright weird of the culinary world but we like to think of it as an
+                                            adventure for all the senses. In addition to this, our flexible itineraries
+                                            often</p>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="tabs_6">
+                                    <div class="faq-details">
+                                        <h6>06 I have special dietary requirements – will they be catered for?</h6>
+                                        <p>We will try our very hardest to accommodate all dietary requirements but in
+                                            some out-of-the-way places it can be very difficult to guarantee. We will
+                                            let you know if there are places on your itinerary where this is the case.
+                                            Please let us know at the time of booking of any food requirements or
+                                            allergies and we’ll pass the information</p>
+                                        <h6>What will the food be like on my trip?</h6>
+                                        <p class="mb-0">Food is one of the most exciting parts of travel. There may be
+                                            some familiar fare but often you’ll be confronted with the new, interesting
+                                            and downright weird of the culinary world but we like to think of it as an
+                                            adventure for all the senses. In addition to this, our flexible itineraries
+                                            often</p>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="tabs_7">
+                                    <div class="faq-details">
+                                        <h6>07 I have special dietary requirements – will they be catered for?</h6>
+                                        <p>We will try our very hardest to accommodate all dietary requirements but in
+                                            some out-of-the-way places it can be very difficult to guarantee. We will
+                                            let you know if there are places on your itinerary where this is the case.
+                                            Please let us know at the time of booking of any food requirements or
+                                            allergies and we’ll pass the information</p>
+                                        <h6>What will the food be like on my trip?</h6>
+                                        <p class="mb-0">Food is one of the most exciting parts of travel. There may be
+                                            some familiar fare but often you’ll be confronted with the new, interesting
+                                            and downright weird of the culinary world but we like to think of it as an
+                                            adventure for all the senses. In addition to this, our flexible itineraries
+                                            often</p>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="tabs_8">
+                                    <div class="faq-details">
+                                        <h6>08 I have special dietary requirements – will they be catered for?</h6>
+                                        <p>We will try our very hardest to accommodate all dietary requirements but in
+                                            some out-of-the-way places it can be very difficult to guarantee. We will
+                                            let you know if there are places on your itinerary where this is the case.
+                                            Please let us know at the time of booking of any food requirements or
+                                            allergies and we’ll pass the information</p>
+                                        <h6>What will the food be like on my trip?</h6>
+                                        <p class="mb-0">Food is one of the most exciting parts of travel. There may be
+                                            some familiar fare but often you’ll be confronted with the new, interesting
+                                            and downright weird of the culinary world but we like to think of it as an
+                                            adventure for all the senses. In addition to this, our flexible itineraries
+                                            often</p>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="tabs_9">
+                                    <div class="faq-details">
+                                        <h6>09 I have special dietary requirements – will they be catered for?</h6>
+                                        <p>We will try our very hardest to accommodate all dietary requirements but in
+                                            some out-of-the-way places it can be very difficult to guarantee. We will
+                                            let you know if there are places on your itinerary where this is the case.
+                                            Please let us know at the time of booking of any food requirements or
+                                            allergies and we’ll pass the information</p>
+                                        <h6>What will the food be like on my trip?</h6>
+                                        <p class="mb-0">Food is one of the most exciting parts of travel. There may be
+                                            some familiar fare but often you’ll be confronted with the new, interesting
+                                            and downright weird of the culinary world but we like to think of it as an
+                                            adventure for all the senses. In addition to this, our flexible itineraries
+                                            often</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- blog area End -->
+    <!-- newslatter area Start -->
+    <div class="newslatter-area pd-top-108">
+        <div class="container">
+
+        </div>
+    </div>
+    <!-- newslatter area End -->
+    <!-- footer area start -->
+    <footer class="footer-area style-three" style="background-image: url(assets/img/bg/2.png);">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="about_us_widget text-center">
+                        <a href="index-2.html" class="footer-logo">
+                            <img src="assets/img/1.png" alt="footerlogo">
+                        </a>
+                    </div>
+                    <div class="footer-widget widget text-center">
+                        <ul class="widget_nav_menu text-center">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Destination</a></li>
+                            <li><a href="#">Tours</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="footer-widget widget text-center">
+                        <div class="widget-contact d-inline-flex">
+                            <p class="telephone text-left">
+                                <i class="fa fa-phone base-color"></i>
+                                <span>
+                                    +091 7710906345
+                                </span>
+                            </p>
+                            <p class="location text-left">
+                                <i class="fa fa-envelope-o"></i>
+                                <span>info@themanzaras.com</span>
+                            </p>
+                            <p class="text-left">
+                                <i class="fa fa-map-marker"></i>
+                                <span>Gaondevi, Thane West, Maharashtra - 400602</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-inner border-tp-solid">
+            <div class="container">
+                <div class="copyright-text text-center">
+                    &copy;The Manzaras All rights reserved. Designed & Developed <i class="fa fa-heart"></i> by <a
+                        href="http://zwin.io/" target="_blank"><span>Probyte Solution, PVT LTD</span></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer area end -->
+    <!-- back to top area start -->
+    <div class="back-to-top">
+        <span class="back-top"><i class="fa fa-angle-up"></i></span>
+    </div>
+    <!-- back to top area end -->
+    <!-- Additional plugin js -->
+    <script src="assets/js/jquery-2.2.4.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <script src="assets/js/jarallax.min.js"></script>
+    <!-- main js -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
