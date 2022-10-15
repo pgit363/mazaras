@@ -3071,11 +3071,11 @@ ul.wp-block-latest-posts.is-grid.alignwide {
         -o-transition: all 0.4s ease;
         transition: all 0.4s ease; }
       .banner-paginations-3 ul li#slick-slide00:before {
-        content: 'Alaska'; }
+        content: 'Family'; }
       .banner-paginations-3 ul li#slick-slide01:before {
-        content: 'Norway'; }
+        content: 'Group'; }
       .banner-paginations-3 ul li#slick-slide02:before {
-        content: 'Iceland'; }
+        content: 'Honeymoon'; }
     .banner-paginations-3 ul .slick-active:after {
       opacity: 1; }
     .banner-paginations-3 ul .slick-active:before {
