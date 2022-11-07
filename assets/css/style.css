@@ -1687,6 +1687,20 @@ ul.wp-block-latest-posts.is-grid.alignwide {
         color: var(--paragraph-color); }
       .login-form-wrap .single-input-wrap input::placeholder {
         color: var(--paragraph-color); }
+
+        .login-form-wrap .single-input-wrap select {
+          color: var(--paragraph-color);
+          font-weight: 200;
+          padding: 0 51px 0 18px !important; }
+          .login-form-wrap .single-input-wrap select::-webkit-input-placeholder {
+            color: var(--paragraph-color); }
+          .login-form-wrap .single-input-wrap select:-ms-input-placeholder {
+            color: var(--paragraph-color); }
+          .login-form-wrap .single-input-wrap select::-ms-input-placeholder {
+            color: var(--paragraph-color); }
+          .login-form-wrap .single-input-wrap select::placeholder {
+            color: var(--paragraph-color); }
+
     .login-form-wrap .single-input-wrap .single-input-title {
       color: var(--paragraph-color);
       font-weight: 400;
@@ -5409,6 +5423,14 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     padding: 0 18px;
     border-radius: 4px;
     color: var(--paragraph-color); }
+    .single-input-wrap select {
+      background: #ffffff;
+      border: 1px solid #EAEAEA;
+      height: 52px;
+      width: 100%;
+      padding: 0 18px;
+      border-radius: 4px;
+      color: var(--paragraph-color); }
   .single-input-wrap textarea {
     background: #ffffff;
     border: 1px solid #EAEAEA;
@@ -5429,6 +5451,13 @@ ul.wp-block-latest-posts.is-grid.alignwide {
     width: 100%;
     padding: 0 18px;
     color: var(--paragraph-color); }
+    .single-input-wrap.style-two select {
+      background: #F8F8F8;
+      border: 1px solid #F8F8F8;
+      height: 52px;
+      width: 100%;
+      padding: 0 18px;
+      color: var(--paragraph-color); }
   .single-input-wrap.style-two textarea {
     background: #F8F8F8;
     border: 1px solid #F8F8F8;
