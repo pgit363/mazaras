@@ -677,27 +677,25 @@
                         <input type="text">
                     </label>
                 </div>
-                <div class="row col-md-12 justify-content-center">
-                    <div class="col-md-4">
-                        <label class="single-input-wrap style-two">
-                            <span class="single-input-title">Services</span>
-                            <select type="select" id="services" name="services" value="Number">
-                                <option value="Accomodation">Accomodation</option>
-                                <option value="Ticketing">Ticketing</option>
-                                <option value="Travelling">Travelling</option>
-                                <option value="Cruise">Cruise</option>
-                                <option value="Camping">Camping</option>
-                                <option value="Trek">Trek</option>
-                                <option value="Holiday">Holiday</option>
-                            </select>
-                        </label>
-                    </div>
-                    <div class="col-md-4">
-                        <label class="single-input-wrap style-two">
-                            <span class="single-input-title">Subject</span>
-                            <input type="text">
-                        </label>
-                    </div>
+                <div class="col-md-8">
+                    <label class="single-input-wrap style-two">
+                        <span class="single-input-title">Services</span>
+                        <select type="select" id="services" name="services" value="Number">
+                            <option value="Accomodation">Accomodation</option>
+                            <option value="Ticketing">Ticketing</option>
+                            <option value="Travelling">Travelling</option>
+                            <option value="Cruise">Cruise</option>
+                            <option value="Camping">Camping</option>
+                            <option value="Trek">Trek</option>
+                            <option value="Holiday">Holiday</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="col-md-8">
+                    <label class="single-input-wrap style-two">
+                        <span class="single-input-title">Subject</span>
+                        <input type="textArea">
+                    </label>
                 </div>
                 <div class="col-md-8">
                     <label class="single-input-wrap style-two">
@@ -707,7 +705,7 @@
                 </div>
 
                 <div style="width: 60%; display: flex; justify-content: flex-start; margin-bottom: 25px;">
-                    <input style="width: 21px;" type="checkbox" id="scales" name="scales" checked>
+                    <input style="width: 21px;" type="checkbox" id="scales" name="scales" required>
                     <label for="scales">&nbsp; I hereby accept all <b class="tncLink" id="tnc">Terms and
                             Conditions</b></label>
                 </div>
@@ -757,7 +755,7 @@
     <div id="tncPopup" class="modal">
         <div class="modal-content" style="height: 85%;">
             <span class="close" id="closeTnC">X</span>
-            <embed src="./Cancellation and Refund Policy.pdf" type="application/pdf" frameBorder="0" scrolling="auto"
+            <embed src="./assets/files/Cancellation and Refund Policy.pdf" type="application/pdf" frameBorder="0" scrolling="auto"
                 height="95%" width="100%"></embed>
         </div>
     </div>
