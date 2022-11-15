@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -658,29 +659,31 @@
     <div id="formPopup" class="modal">
         <div class="modal-content">
             <span class="close" id="close">X</span>
-            <form class="modal-form" action="">
+            <form class="modal-form" action="./php/send.php" method="post">
+                <h1 id="register">Ask Question</h1>
                 <div class="col-md-8">
                     <label class="single-input-wrap style-two">
                         <span class="single-input-title">Name</span>
-                        <input type="text">
+                        <input type="text" name="name" id="name" required>
                     </label>
                 </div>
                 <div class="col-md-8">
                     <label class="single-input-wrap style-two">
                         <span class="single-input-title">Email</span>
-                        <input type="text">
+                        <input type="email" name="email" required>
                     </label>
                 </div>
                 <div class="col-md-8">
                     <label class="single-input-wrap style-two">
                         <span class="single-input-title">Whatsapp Number</span>
-                        <input type="text">
+                        <input type="number" name="mobile" maxlength="10" required>
                     </label>
                 </div>
                 <div class="col-md-8">
                     <label class="single-input-wrap style-two">
                         <span class="single-input-title">Services</span>
-                        <select type="select" id="services" name="services" value="Number">
+                        <select type="select" id="service" name="service" required>
+                            <option value="" selected disabled hidden>Select an Option</option>
                             <option value="Accomodation">Accomodation</option>
                             <option value="Ticketing">Ticketing</option>
                             <option value="Travelling">Travelling</option>
@@ -694,13 +697,13 @@
                 <div class="col-md-8">
                     <label class="single-input-wrap style-two">
                         <span class="single-input-title">Subject</span>
-                        <input type="textArea">
+                        <input type="text" name="sub" required>
                     </label>
                 </div>
                 <div class="col-md-8">
                     <label class="single-input-wrap style-two">
                         <span class="single-input-title">Message</span>
-                        <input type="text">
+                        <input type="text" name="msg" required>
                     </label>
                 </div>
 

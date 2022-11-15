@@ -242,34 +242,40 @@
                     </div>
                 </div>
                 <div class="col-xl-5 col-lg-6">
-                    <form class="tp-form-wrap">
+                    <form class="tp-form-wrap" action="./php/send.php" method="post">
                         <div class="row">
                             <div class="col-md-6">
                                 <label class="single-input-wrap style-two">
                                     <span class="single-input-title">Name</span>
-                                    <input type="text">
+                                    <input type="text" name="name" id="name" required>
                                 </label>
                             </div>
                             <div class="col-md-6">
                                 <label class="single-input-wrap style-two">
                                     <span class="single-input-title">Number</span>
-                                    <input type="text">
+                                    <input type="number" name="mobile" maxlength="10" required>
                                 </label>
                             </div>
                             <div class="col-lg-12">
                                 <label class="single-input-wrap style-two">
                                     <span class="single-input-title">Email</span>
-                                    <input type="text">
+                                    <input type="email" name="email" required>
                                 </label>
                             </div>
                             <div class="col-lg-12">
                                 <label class="single-input-wrap style-two">
                                     <span class="single-input-title">Message</span>
-                                    <textarea></textarea>
+                                    <textarea  type="msg" name="msg"></textarea>
                                 </label>
                             </div>
                             <div class="col-12">
-                                <a class="btn btn-yellow" href="#">Send Message</a>
+                                <div class="formButton">
+                                    <button class="btn btn-yellow">
+                                        <span>Send Message
+                                            <i class="la la-arrow-right"></i></span>
+                                    </button>
+                                </div>
+                                <!-- <a class="btn btn-yellow" href="#">Send Message</a> -->
                             </div>
                         </div>
                     </form>
