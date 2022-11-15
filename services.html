@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,6 +27,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- responsive css -->
     <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <style>
         input {
             width: 50vw;
@@ -100,6 +100,25 @@
             display: flex;
             justify-content: center;
         }
+
+        .float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 90px;
+            right: 27px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+        }
+
+        .my-float {
+            margin-top: 16px;
+        }
     </style>
 </head>
 
@@ -126,6 +145,10 @@
     </div> -->
     <!-- search popup End -->
     <!-- //. sign up Popup -->
+    <a href="https://api.whatsapp.com/send?phone=7710906345&text=Can't Find What You want?" class="float"
+        target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+    </a>
     <div class="signUp-popup login-register-popup" id="signUp-popup">
         <div class="login-register-popup-wrap">
             <div class="row no-gutters">
@@ -198,16 +221,19 @@
                             <!-- <p>Or Continue With</p> -->
                             <ul class="social-icon">
                                 <li>
-                                    <a class="facebook" href="#"><i class="fa fa-facebook  "></i></a>
+                                    <a class="facebook" href="https://www.facebook.com/manzaras.official"
+                                        target="_blank"><i class="fa fa-facebook  "></i></a>
                                 </li>
-                                <li>
+                                <!-- <li>
                                     <a class="twitter" href="#"><i class="fa fa-twitter  "></i></a>
                                 </li>
                                 <li>
                                     <a class="pinterest" href="#"><i class="fa fa-pinterest"></i></a>
-                                </li>
+                                </li> -->
                                 <li>
-                                    <a class="pinterest" href="#"><i class="fa fa-instagram"></i></a>
+                                    <a class="pinterest"
+                                        href="https://instagram.com/manzaras_official?igshid=YmMyMTA2M2Y="
+                                        target="_blank"><i class="fa fa-instagram"></i></a>
                                 </li>
                             </ul>
                         </div>
@@ -510,7 +536,7 @@
                             <h4 class="title">Accomodations</h4>
                             <p class="content">We can help you find accommodation in your preferred location within your
                                 budget</p>
-                            <button class="btn btn-yellow" id="openForm"><span>Get Details<i
+                            <button class="btn btn-yellow" onclick="callModal();"><span>Get Details<i
                                         class="la la-arrow-right"></i></span></button>
                             <!-- 
                             <a class="btn btn-yellow" href="#"><span>Get Details<i
@@ -530,8 +556,7 @@
                                         <!-- <a class="tag" href="#">Europe</a> -->
                                         <!-- <p class="date">19 September 2019</p> -->
                                         <h4 class="title">Hotels</h4>
-                                        <a class="btn btn-yellow" href="#"><span>Read More<i
-                                                    class="la la-arrow-right"></i></span></a>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
                                     </div>
                                 </div>
                             </div>
@@ -546,8 +571,7 @@
                                         <!-- <a class="tag" href="#">Europe</a> -->
                                         <!-- <p class="date">18 September 2019</p> -->
                                         <h4 class="title">Resorts</h4>
-                                        <a class="btn btn-yellow" href="#"><span>Read More<i
-                                                    class="la la-arrow-right"></i></span></a>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
                                     </div>
                                 </div>
                             </div>
@@ -562,8 +586,7 @@
                                         <!-- <a class="tag" href="#">Europe</a> -->
                                         <!-- <p class="date">18 September 2019</p> -->
                                         <h4 class="title">Villas</h4>
-                                        <a class="btn btn-yellow" href="#"><span>Read More<i
-                                                    class="la la-arrow-right"></i></span></a>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
                                     </div>
                                 </div>
                             </div>
@@ -578,8 +601,7 @@
                                         <!-- <a class="tag" href="#">Europe</a> -->
                                         <!-- <p class="date">19 September 2019</p> -->
                                         <h4 class="title">Homestays</h4>
-                                        <a class="btn btn-yellow" href="#"><span>Read More<i
-                                                    class="la la-arrow-right"></i></span></a>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
                                     </div>
                                 </div>
                             </div>
@@ -594,8 +616,7 @@
                                         <!-- <a class="tag" href="#">Europe</a> -->
                                         <!-- <p class="date">19 September 2019</p> -->
                                         <h4 class="title">Holiday Homes</h4>
-                                        <a class="btn btn-yellow" href="#"><span>Read More<i
-                                                    class="la la-arrow-right"></i></span></a>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
                                     </div>
                                 </div>
                             </div>
@@ -610,8 +631,7 @@
                                         <!-- <a class="tag" href="#">Europe</a> -->
                                         <!-- <p class="date">18 September 2019</p> -->
                                         <h4 class="title">Business Hotels</h4>
-                                        <a class="btn btn-yellow" href="#"><span>Read More<i
-                                                    class="la la-arrow-right"></i></span></a>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
                                     </div>
                                 </div>
                             </div>
@@ -626,8 +646,7 @@
                                         <!-- <a class="tag" href="#">Europe</a> -->
                                         <!-- <p class="date">18 September 2019</p> -->
                                         <h4 class="title">House Boats</h4>
-                                        <a class="btn btn-yellow" href="#"><span>Read More<i
-                                                    class="la la-arrow-right"></i></span></a>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
                                     </div>
                                 </div>
                             </div>
@@ -642,8 +661,7 @@
                                         <!-- <a class="tag" href="#">Europe</a> -->
                                         <!-- <p class="date">19 September 2019</p> -->
                                         <h4 class="title">Bed and Breakfast</h4>
-                                        <a class="btn btn-yellow" href="#"><span>Read More<i
-                                                    class="la la-arrow-right"></i></span></a>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
                                     </div>
                                 </div>
                             </div>
@@ -707,11 +725,22 @@
                     </label>
                 </div>
 
-                <div style="width: 60%; display: flex; justify-content: flex-start; margin-bottom: 25px;">
-                    <input style="width: 21px;" type="checkbox" id="scales" name="scales" required>
-                    <label for="scales">&nbsp; I hereby accept all <b class="tncLink" id="tnc">Terms and
-                            Conditions</b></label>
+                <div class="col-md-8">
+                    <label class="single-input-wrap style-two">
+                        <!-- <span class="single-input-title">Message</span> -->
+                        <input style="width: 21px; height: fit-content;" type="checkbox" id="scales" name="scales"
+                            required>I hereby accept all <b class="tncLink" id="tnc">Terms and
+                            Conditions</b>
+                        <!-- <label for="scales">&nbsp; I hereby accept all <b class="tncLink" id="tnc">Terms and
+                            Conditions</b></label> -->
+                    </label>
                 </div>
+
+                <!-- <div class="col-md-8" style="width: 60%; display: flex; justify-content: flex-start; margin-bottom: 25px;">
+                    <input style="width: 21px;" type="checkbox" id="scales" name="scales" required>
+                    <label for="scales"> I hereby accept all <b class="tncLink" id="tnc">Terms and
+                            Conditions</b></label>
+                </div> -->
                 <div class="formButton">
                     <button class="btn btn-yellow" id="openForm">
                         <span>Submit
@@ -720,46 +749,13 @@
                 </div>
             </form>
         </div>
-        <!-- <div class="col-xl-5 col-lg-6">
-            <form class="tp-form-wrap">
-                <div class="row">
-                    <div class="col-md-6">
-                        <label class="single-input-wrap style-two">
-                            <span class="single-input-title">Name</span>
-                            <input type="text">
-                        </label>
-                    </div>
-                    <div class="col-md-6">
-                        <label class="single-input-wrap style-two">
-                            <span class="single-input-title">Number</span>
-                            <input type="text">
-                        </label>
-                    </div>
-                    <div class="col-lg-12">
-                        <label class="single-input-wrap style-two">
-                            <span class="single-input-title">Email</span>
-                            <input type="text">
-                        </label>
-                    </div>
-                    <div class="col-lg-12">
-                        <label class="single-input-wrap style-two">
-                            <span class="single-input-title">Message</span>
-                            <textarea></textarea>
-                        </label>
-                    </div>
-                    <div class="col-12">
-                        <a class="btn btn-yellow" href="#">Send Message</a>
-                    </div>
-                </div>
-            </form>
-        </div> -->
     </div>
 
     <div id="tncPopup" class="modal">
         <div class="modal-content" style="height: 85%;">
             <span class="close" id="closeTnC">X</span>
-            <embed src="./assets/files/Cancellation and Refund Policy.pdf" type="application/pdf" frameBorder="0" scrolling="auto"
-                height="95%" width="100%"></embed>
+            <embed src="./assets/files/Cancellation and Refund Policy.pdf" type="application/pdf" frameBorder="0"
+                scrolling="auto" height="95%" width="100%"></embed>
         </div>
     </div>
 
@@ -779,8 +775,10 @@
                             <h4 class="title">Ticketing</h4>
                             <p class="content">We can help you reserve your tickets hassle free with priority assistance
                             </p>
-                            <a class="btn btn-yellow" href="#"><span>Read More<i
-                                        class="la la-arrow-right"></i></span></a>
+                            <button class="btn btn-yellow" onclick="callModal();"><span>Get Details<i
+                                        class="la la-arrow-right"></i></span></button>
+                            <!-- <a class="btn btn-yellow"  id="openForm"><span>Read More<i
+                                        class="la la-arrow-right"></i></span></a> -->
                         </div>
                     </div>
                 </div>
@@ -796,8 +794,7 @@
                                         <!-- <a class="tag" href="#">Europe</a> -->
                                         <!-- <p class="date">19 September 2019</p> -->
                                         <h4 class="title">Flight</h4>
-                                        <a class="btn btn-yellow" href="#"><span>Read More<i
-                                                    class="la la-arrow-right"></i></span></a>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
                                     </div>
                                 </div>
                             </div>
@@ -812,8 +809,7 @@
                                         <!-- <a class="tag" href="#">Europe</a> -->
                                         <!-- <p class="date">18 September 2019</p> -->
                                         <h4 class="title">Train</h4>
-                                        <a class="btn btn-yellow" href="#"><span>Read More<i
-                                                    class="la la-arrow-right"></i></span></a>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
                                     </div>
                                 </div>
                             </div>
@@ -828,8 +824,7 @@
                                         <!-- <a class="tag" href="#">Europe</a> -->
                                         <!-- <p class="date">18 September 2019</p> -->
                                         <h4 class="title">Bus</h4>
-                                        <a class="btn btn-yellow" href="#"><span>Read More<i
-                                                    class="la la-arrow-right"></i></span></a>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
                                     </div>
                                 </div>
                             </div>
@@ -856,8 +851,8 @@
                             <h4 class="title">Travelling</h4>
                             <p class="content">Describe your requirements to us and we'll provide you with the cheapest
                                 rates for rentals.</p>
-                            <a class="btn btn-yellow" href="#"><span>Read More<i
-                                        class="la la-arrow-right"></i></span></a>
+                                <button class="btn btn-yellow"  onclick="callModal();"><span>Get Details<i
+                                    class="la la-arrow-right"></i></span></button>
                         </div>
                     </div>
                 </div>
@@ -873,8 +868,7 @@
                                         <!-- <a class="tag" href="#">Europe</a> -->
                                         <!-- <p class="date">19 September 2019</p> -->
                                         <h4 class="title">Cars on Hire</h4>
-                                        <a class="btn btn-yellow" href="#"><span>Read More<i
-                                                    class="la la-arrow-right"></i></span></a>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
                                     </div>
                                 </div>
                             </div>
@@ -889,8 +883,7 @@
                                         <!-- <a class="tag" href="#">Europe</a> -->
                                         <!-- <p class="date">18 September 2019</p> -->
                                         <h4 class="title">Mini Bus on Hire</h4>
-                                        <a class="btn btn-yellow" href="#"><span>Read More<i
-                                                    class="la la-arrow-right"></i></span></a>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
                                     </div>
                                 </div>
                             </div>
@@ -905,8 +898,7 @@
                                         <!-- <a class="tag" href="#">Europe</a> -->
                                         <!-- <p class="date">18 September 2019</p> -->
                                         <h4 class="title">Force Travellers on Hire</h4>
-                                        <a class="btn btn-yellow" href="#"><span>Read More<i
-                                                    class="la la-arrow-right"></i></span></a>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
                                     </div>
                                 </div>
                             </div>
@@ -921,8 +913,7 @@
                                         <!-- <a class="tag" href="#">Europe</a> -->
                                         <!-- <p class="date">18 September 2019</p> -->
                                         <h4 class="title">Bus on Hire</h4>
-                                        <a class="btn btn-yellow" href="#"><span>Read More<i
-                                                    class="la la-arrow-right"></i></span></a>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
                                     </div>
                                 </div>
                             </div>
@@ -950,8 +941,8 @@
                             <h4 class="title">Cruises</h4>
                             <p class="content">Our team is here to help! Get expert advice on exotic cruising
                                 destinations.</p>
-                            <a class="btn btn-yellow" href="#"><span>Read More<i
-                                        class="la la-arrow-right"></i></span></a>
+                            <button class="btn btn-yellow"  onclick="callModal();"><span>Get Details<i
+                                                    class="la la-arrow-right"></i></span></button>
                         </div>
                     </div>
                 </div>
@@ -967,8 +958,7 @@
                                         <!-- <a class="tag" href="#">Europe</a> -->
                                         <!-- <p class="date">19 September 2019</p> -->
                                         <h4 class="title">Mumbai</h4>
-                                        <a class="btn btn-yellow" href="#"><span>Read More<i
-                                                    class="la la-arrow-right"></i></span></a>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
                                     </div>
                                 </div>
                             </div>
@@ -983,8 +973,7 @@
                                         <!-- <a class="tag" href="#">Europe</a> -->
                                         <!-- <p class="date">18 September 2019</p> -->
                                         <h4 class="title">Goa</h4>
-                                        <a class="btn btn-yellow" href="#"><span>Read More<i
-                                                    class="la la-arrow-right"></i></span></a>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
                                     </div>
                                 </div>
                             </div>
@@ -999,8 +988,7 @@
                                         <!-- <a class="tag" href="#">Europe</a> -->
                                         <!-- <p class="date">18 September 2019</p> -->
                                         <h4 class="title">Lakshadweep</h4>
-                                        <a class="btn btn-yellow" href="#"><span>Read More<i
-                                                    class="la la-arrow-right"></i></span></a>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
                                     </div>
                                 </div>
                             </div>
@@ -1015,8 +1003,7 @@
                                         <!-- <a class="tag" href="#">Europe</a> -->
                                         <!-- <p class="date">18 September 2019</p> -->
                                         <h4 class="title">Kochi</h4>
-                                        <a class="btn btn-yellow" href="#"><span>Read More<i
-                                                    class="la la-arrow-right"></i></span></a>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
                                     </div>
                                 </div>
                             </div>
@@ -1042,8 +1029,8 @@
                                          <p class="date">19 September 2019</p> -->
                             <h4 class="title">Camping</h4>
                             <p class="content">Let our team help you find campsites at the lowest prices.</p>
-                            <a class="btn btn-yellow" href="#"><span>Read More<i
-                                        class="la la-arrow-right"></i></span></a>
+                            <button class="btn btn-yellow"  onclick="callModal();"><span>Get Details<i
+                                                    class="la la-arrow-right"></i></span></button>
                         </div>
                     </div>
                 </div>
@@ -1059,8 +1046,7 @@
                                         <!-- <a class="tag" href="#">Europe</a> -->
                                         <!-- <p class="date">19 September 2019</p> -->
                                         <h4 class="title">Pawna</h4>
-                                        <a class="btn btn-yellow" href="#"><span>Read More<i
-                                                    class="la la-arrow-right"></i></span></a>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
                                     </div>
                                 </div>
                             </div>
@@ -1075,8 +1061,7 @@
                                         <!-- <a class="tag" href="#">Europe</a> -->
                                         <!-- <p class="date">18 September 2019</p> -->
                                         <h4 class="title">Karjat</h4>
-                                        <a class="btn btn-yellow" href="#"><span>Read More<i
-                                                    class="la la-arrow-right"></i></span></a>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
                                     </div>
                                 </div>
                             </div>
@@ -1091,8 +1076,7 @@
                                         <!-- <a class="tag" href="#">Europe</a> -->
                                         <!-- <p class="date">18 September 2019</p> -->
                                         <h4 class="title">Alibaug</h4>
-                                        <a class="btn btn-yellow" href="#"><span>Read More<i
-                                                    class="la la-arrow-right"></i></span></a>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
                                     </div>
                                 </div>
                             </div>
@@ -1107,8 +1091,7 @@
                                         <!-- <a class="tag" href="#">Europe</a> -->
                                         <!-- <p class="date">18 September 2019</p> -->
                                         <h4 class="title">Panshet – Pune</h4>
-                                        <a class="btn btn-yellow" href="#"><span>Read More<i
-                                                    class="la la-arrow-right"></i></span></a>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
                                     </div>
                                 </div>
                             </div>
@@ -1123,8 +1106,7 @@
                                         <!-- <a class="tag" href="#">Europe</a> -->
                                         <!-- <p class="date">19 September 2019</p> -->
                                         <h4 class="title">Rajasthan</h4>
-                                        <a class="btn btn-yellow" href="#"><span>Read More<i
-                                                    class="la la-arrow-right"></i></span></a>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
                                     </div>
                                 </div>
                             </div>
@@ -1139,8 +1121,7 @@
                                         <!-- <a class="tag" href="#">Europe</a> -->
                                         <!-- <p class="date">18 September 2019</p> -->
                                         <h4 class="title">Uttarakhand</h4>
-                                        <a class="btn btn-yellow" href="#"><span>Read More<i
-                                                    class="la la-arrow-right"></i></span></a>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
                                     </div>
                                 </div>
                             </div>
@@ -1155,8 +1136,7 @@
                                         <!-- <a class="tag" href="#">Europe</a> -->
                                         <!-- <p class="date">18 September 2019</p> -->
                                         <h4 class="title">Ladakh</h4>
-                                        <a class="btn btn-yellow" href="#"><span>Read More<i
-                                                    class="la la-arrow-right"></i></span></a>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
                                     </div>
                                 </div>
                             </div>
@@ -1171,8 +1151,7 @@
                                         <!-- <a class="tag" href="#">Europe</a> -->
                                         <!-- <p class="date">18 September 2019</p> -->
                                         <h4 class="title">Kasol – Parvati Valley</h4>
-                                        <a class="btn btn-yellow" href="#"><span>Read More<i
-                                                    class="la la-arrow-right"></i></span></a>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
                                     </div>
                                 </div>
                             </div>
@@ -1187,8 +1166,7 @@
                                         <!-- <a class="tag" href="#">Europe</a> -->
                                         <!-- <p class="date">18 September 2019</p> -->
                                         <h4 class="title">Himalayas</h4>
-                                        <a class="btn btn-yellow" href="#"><span>Read More<i
-                                                    class="la la-arrow-right"></i></span></a>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
                                     </div>
                                 </div>
                             </div>
@@ -1215,8 +1193,8 @@
                                      <p class="date">19 September 2019</p> -->
                             <h4 class="title">Trekking</h4>
                             <p class="content">Our Trekking Experts will assist you in planning your trek.</p>
-                            <a class="btn btn-yellow" href="#"><span>Read More<i
-                                        class="la la-arrow-right"></i></span></a>
+                            <button class="btn btn-yellow"  onclick="callModal();"><span>Get Details<i
+                                                    class="la la-arrow-right"></i></span></button>
                         </div>
                     </div>
                 </div>
@@ -1232,8 +1210,7 @@
                                         <!-- <a class="tag" href="#">Europe</a> -->
                                         <!-- <p class="date">19 September 2019</p> -->
                                         <h4 class="title">Himachal</h4>
-                                        <a class="btn btn-yellow" href="#"><span>Read More<i
-                                                    class="la la-arrow-right"></i></span></a>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
                                     </div>
                                 </div>
                             </div>
@@ -1248,8 +1225,7 @@
                                         <!-- <a class="tag" href="#">Europe</a> -->
                                         <!-- <p class="date">18 September 2019</p> -->
                                         <h4 class="title">Shapni</h4>
-                                        <a class="btn btn-yellow" href="#"><span>Read More<i
-                                                    class="la la-arrow-right"></i></span></a>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
                                     </div>
                                 </div>
                             </div>
@@ -1264,8 +1240,7 @@
                                         <!-- <a class="tag" href="#">Europe</a> -->
                                         <!-- <p class="date">18 September 2019</p> -->
                                         <h4 class="title">Raghupur Fort</h4>
-                                        <a class="btn btn-yellow" href="#"><span>Read More<i
-                                                    class="la la-arrow-right"></i></span></a>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
                                     </div>
                                 </div>
                             </div>
@@ -1280,8 +1255,7 @@
                                         <!-- <a class="tag" href="#">Europe</a> -->
                                         <!-- <p class="date">18 September 2019</p> -->
                                         <h4 class="title">Lambhari</h4>
-                                        <a class="btn btn-yellow" href="#"><span>Read More<i
-                                                    class="la la-arrow-right"></i></span></a>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
                                     </div>
                                 </div>
                             </div>
@@ -1296,8 +1270,7 @@
                                         <!-- <a class="tag" href="#">Europe</a> -->
                                         <!-- <p class="date">18 September 2019</p> -->
                                         <h4 class="title">Chorni</h4>
-                                        <a class="btn btn-yellow" href="#"><span>Read More<i
-                                                    class="la la-arrow-right"></i></span></a>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
                                     </div>
                                 </div>
                             </div>
@@ -1312,8 +1285,7 @@
                                         <!-- <a class="tag" href="#">Europe</a> -->
                                         <!-- <p class="date">18 September 2019</p> -->
                                         <h4 class="title">Khorna</h4>
-                                        <a class="btn btn-yellow" href="#"><span>Read More<i
-                                                    class="la la-arrow-right"></i></span></a>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
                                     </div>
                                 </div>
                             </div>
@@ -1343,12 +1315,14 @@
                     </div>
                     <div class="footer-widget widget text-center">
                         <ul class="widget_nav_menu text-center">
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="services.html">Services</a></li>
-                            <li><a href="vacations.html">Vacations</a></li>
-                            <li><a href="faq.html">FAQ'S</a></li>
-                            <li><a href="contact.html">Contact Us</a></li>
+                            <!-- <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li> -->
+                            <li><a href="./assets/files/Website Terms & Conditions.pdf" target="_blank">Terms &
+                                    Conditions</a></li>
+                            <li><a href="./assets/files/Privacy Policy.pdf" target="_blank">Privacy Policy</a></li>
+                            <li><a href="./assets/files/Cancellation and Refund Policy.pdf" target="_blank">Cancellation
+                                    & Refund Policy</a></li>
+                            <!-- <li><a href="contact.html">Contact Us</a></li> -->
                         </ul>
                     </div>
                 </div>
@@ -1392,20 +1366,23 @@
     </div>
     <!-- back to top area end -->
     <script>
-        var modal = document.getElementById("formPopup");
-        var btn = document.getElementById("openForm");
-        var span = document.getElementsByClassName("close")[0];
-        btn.onclick = function () {
+        function callModal() {
+            var modal = document.getElementById("formPopup");
+            // var btn = document.getElementById("openForm");
+            var span = document.getElementsByClassName("close")[0];
+            // btn.onclick = function () {
             modal.style.display = "block";
-        }
-        span.onclick = function () {
-            modal.style.display = "none";
-        }
-        window.onclick = function (event) {
-            if (event.target == modal) {
+            // }
+            span.onclick = function () {
                 modal.style.display = "none";
             }
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
         }
+
     </script>
     <script>
         var tncPopup = document.getElementById("tncPopup");

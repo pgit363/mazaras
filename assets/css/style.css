@@ -3076,6 +3076,10 @@ ul.wp-block-latest-posts.is-grid.alignwide {
         content: 'Group'; }
       .banner-paginations-3 ul li#slick-slide02:before {
         content: 'Honeymoon'; }
+        .banner-paginations-3 ul li#slick-slide03:before {
+          content: 'Astronomical'; }
+          .banner-paginations-3 ul li#slick-slide04:before {
+            content: 'Luxury'; }
     .banner-paginations-3 ul .slick-active:after {
       opacity: 1; }
     .banner-paginations-3 ul .slick-active:before {
