@@ -310,10 +310,43 @@
             <div class="nav-right-content">
                 <ul>
                     <li class="pr-0">
-                        <!-- <a class="btn btn-yellow" href="../tour-details.html">Book Now <i class="fa fa-paper-plane"></i></a> -->
+                        <button class="btn btn-yellow" onclick="callModal();"><span>Book Now<i
+                                    class="la la-arrow-right"></i></span></button>
+                        <!-- <a class="btn btn-yellow" href="#">Book Now <i class="fa fa-paper-plane"></i></a> -->
                     </li>
                 </ul>
             </div>
+
+            <div id="formPopup" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="close">X</span>
+                    <iframe
+                        src="https://docs.google.com/forms/d/e/1FAIpQLSeOW4uAoX5Jg3eZXhxXYPtjJj3e692R_94pHhPaRcVWiJNsUg/viewform?embedded=true"
+                        width="640" height="1097" frameborder="0" marginheight="0" marginwidth="0">
+                        Loading…
+                    </iframe>
+                </div>
+            </div>
+
+            <script>
+                function callModal() {
+                    var modal = document.getElementById("formPopup");
+                    // var btn = document.getElementById("openForm");
+                    var span = document.getElementsByClassName("close")[0];
+                    // btn.onclick = function () {
+                    modal.style.display = "block";
+                    // }
+                    span.onclick = function () {
+                        modal.style.display = "none";
+                    }
+                    window.onclick = function (event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                    }
+                }
+
+            </script>
         </div>
     </nav>
     <!-- navbar area end -->
@@ -567,7 +600,7 @@
         <div class="copyright-inner border-tp-solid">
             <div class="container">
                 <div class="copyright-text text-center">
-                    &copy;The Manzaras All rights reserved. Designed & Developed <i class="fa fa-heart"></i> by <a
+                    &copy;Manzaras All rights reserved. Designed & Developed <i class="fa fa-heart"></i> by <a
                         href="#" target="_blank"><span>Probyte Solution, PVT LTD</span></a>
                 </div>
             </div>

@@ -45,6 +45,149 @@
         .my-float {
             margin-top: 16px;
         }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 10;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 30%;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .modal-content {
+                width: 90%;
+            }
+        }
+
+        .close {
+            color: #000;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /**********************
+/***** Services *******
+/*********************/
+        @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+        section {
+            padding: 60px 0;
+        }
+
+        section .section-title {
+            text-align: center;
+            color: #3f92b3;
+            margin-bottom: 50px;
+            text-transform: uppercase;
+        }
+
+        #what-we-do {
+            background: #ffffff;
+        }
+
+        #what-we-do .card {
+            padding: 1rem !important;
+            border: none;
+            margin-bottom: 1rem;
+            -webkit-transition: .5s all ease;
+            -moz-transition: .5s all ease;
+            transition: .5s all ease;
+        }
+
+        #what-we-do .card:hover {
+            -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+            -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+            box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+        }
+
+        #what-we-do .card .card-block {
+            padding-left: 50px;
+            position: relative;
+        }
+
+        #what-we-do .card .card-block a {
+            color: #3f92b3 !important;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        #what-we-do .card .card-block a i {
+            display: none;
+
+        }
+
+        #what-we-do .card:hover .card-block a i {
+            display: inline-block;
+            font-weight: 700;
+
+        }
+
+        #what-we-do .card .card-block:before {
+            font-family: FontAwesome;
+            position: absolute;
+            font-size: 39px;
+            color: #3f92b3;
+            left: 0;
+            -webkit-transition: -webkit-transform .2s ease-in-out;
+            transition: transform .2s ease-in-out;
+        }
+
+        #what-we-do .card .block-1:before {
+            content: "\f0e7";
+        }
+
+        #what-we-do .card .block-2:before {
+            content: "\f0eb";
+        }
+
+        #what-we-do .card .block-3:before {
+            content: "\f00c";
+        }
+
+        #what-we-do .card .block-4:before {
+            content: "\f209";
+        }
+
+        #what-we-do .card .block-5:before {
+            content: "\f0a1";
+        }
+
+        #what-we-do .card .block-6:before {
+            content: "\f218";
+        }
+
+        #what-we-do .card:hover .card-block:before {
+            -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+            -webkit-transition: .5s all ease;
+            -moz-transition: .5s all ease;
+            transition: .5s all ease;
+        }
     </style>
 </head>
 
@@ -71,8 +214,7 @@
     </div> -->
     <!-- search popup End -->
     <!-- //. sign up Popup -->
-    <a href="https://api.whatsapp.com/send?phone=7710906345&text=Hi!" class="float"
-        target="_blank">
+    <a href="https://api.whatsapp.com/send?phone=7710906345&text=Hi!" class="float" target="_blank">
         <i class="fa fa-whatsapp my-float"></i>
     </a>
     <div class="signUp-popup login-register-popup" id="signUp-popup">
@@ -147,7 +289,8 @@
                             <!-- <p>Or Continue With</p> -->
                             <ul class="social-icon">
                                 <li>
-                                    <a class="facebook" href="https://www.facebook.com/manzaras.official" target="_blank"><i class="fa fa-facebook  "></i></a>
+                                    <a class="facebook" href="https://www.facebook.com/manzaras.official"
+                                        target="_blank"><i class="fa fa-facebook  "></i></a>
                                 </li>
                                 <!-- <li>
                                     <a class="twitter" href="#"><i class="fa fa-twitter  "></i></a>
@@ -156,7 +299,9 @@
                                     <a class="pinterest" href="#"><i class="fa fa-pinterest"></i></a>
                                 </li> -->
                                 <li>
-                                    <a class="pinterest" href="https://instagram.com/manzaras_official?igshid=YmMyMTA2M2Y=" target="_blank"><i class="fa fa-instagram"></i></a>
+                                    <a class="pinterest"
+                                        href="https://instagram.com/manzaras_official?igshid=YmMyMTA2M2Y="
+                                        target="_blank"><i class="fa fa-instagram"></i></a>
                                 </li>
                             </ul>
                         </div>
@@ -185,7 +330,7 @@
             <div class="collapse navbar-collapse" id="tp_main_menu">
                 <div class="logo-wrapper desktop-logo">
                     <a href="index.html" class="main-logo">
-                        <img src="assets/img/3.png" style="max-width: 100px;" alt="logo">
+                        <img src="assets/img/1.png" style="max-width: 100px;" alt="logo">
                     </a>
                     <a href="index.html" class="sticky-logo">
                         <img src="assets/img/1.png" style="max-width: 80px;" alt="logo">
@@ -224,10 +369,43 @@
             <div class="nav-right-content">
                 <ul>
                     <li class="pr-0">
-                        <!-- <a class="btn btn-yellow" href="tour-details.html">Book Now <i class="fa fa-paper-plane"></i></a> -->
+                        <button class="btn btn-yellow" onclick="callModal();"><span>Book Now<i
+                                    class="la la-arrow-right"></i></span></button>
+                        <!-- <a class="btn btn-yellow" href="#">Book Now <i class="fa fa-paper-plane"></i></a> -->
                     </li>
                 </ul>
             </div>
+
+            <div id="formPopup" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="close">X</span>
+                    <iframe
+                        src="https://docs.google.com/forms/d/e/1FAIpQLSeOW4uAoX5Jg3eZXhxXYPtjJj3e692R_94pHhPaRcVWiJNsUg/viewform?embedded=true"
+                        width="640" height="1097" frameborder="0" marginheight="0" marginwidth="0">
+                        Loading…
+                    </iframe>
+                </div>
+            </div>
+
+            <script>
+                function callModal() {
+                    var modal = document.getElementById("formPopup");
+                    // var btn = document.getElementById("openForm");
+                    var span = document.getElementsByClassName("close")[0];
+                    // btn.onclick = function () {
+                    modal.style.display = "block";
+                    // }
+                    span.onclick = function () {
+                        modal.style.display = "none";
+                    }
+                    window.onclick = function (event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                    }
+                }
+
+            </script>
         </div>
     </nav>
     <!-- navbar area end -->
@@ -257,7 +435,7 @@
                     <div class="section-title mb-lg-0">
                         <h2 class="title">Lets Go Travel <br> with Us</h2>
                         <p style="word-break: keep-all;">Dreaming of a getaway? Let us make the arrangements for you.
-                            The Manzaras have been
+                            Manzaras have been
                             offering first-class travel planning services and guidance. Travelling can be a great way to
                             enjoy
                             a new place without any of the hassles of being on your own.With Manzaras Hospitality,
@@ -291,6 +469,208 @@
         </div>
     </div>
     <!-- about section area end -->
+
+
+
+    <!-- <section id="what-we-do">
+        <div class="container-fluid">
+            <h2 class="section-title mb-2 h1">What we do</h2>
+            <p class="text-center text-muted h5">Having and managing a correct marketing strategy is crucial in a fast
+                moving market.</p>
+            <div class="row mt-5">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                    <div class="card">
+                        <div class="card-block block-1">
+                            <h3 class="card-title">Special title</h3>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                            </p>
+                            <a href="https://www.fiverr.com/share/qb8D02" title="Read more" class="read-more">Read
+                                more<i class="fa fa-angle-double-right ml-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                    <div class="card">
+                        <div class="card-block block-2">
+                            <h3 class="card-title">Special title</h3>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                            </p>
+                            <a href="https://www.fiverr.com/share/qb8D02" title="Read more" class="read-more">Read
+                                more<i class="fa fa-angle-double-right ml-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                    <div class="card">
+                        <div class="card-block block-3">
+                            <h3 class="card-title">Special title</h3>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                            </p>
+                            <a href="https://www.fiverr.com/share/qb8D02" title="Read more" class="read-more">Read
+                                more<i class="fa fa-angle-double-right ml-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                    <div class="card">
+                        <div class="card-block block-4">
+                            <h3 class="card-title">Special title</h3>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                            </p>
+                            <a href="https://www.fiverr.com/share/qb8D02" title="Read more" class="read-more">Read
+                                more<i class="fa fa-angle-double-right ml-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                    <div class="card">
+                        <div class="card-block block-5">
+                            <h3 class="card-title">Special title</h3>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                            </p>
+                            <a href="https://www.fiverr.com/share/qb8D02" title="Read more" class="read-more">Read
+                                more<i class="fa fa-angle-double-right ml-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                    <div class="card">
+                        <div class="card-block block-6">
+                            <h3 class="card-title">Special title</h3>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                            </p>
+                            <a href="https://www.fiverr.com/share/qb8D02" title="Read more" class="read-more">Read
+                                more<i class="fa fa-angle-double-right ml-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <div class="intro-area pd-top-75" id="what-we-do">
+        <div class="container">
+            <div class="section-title text-center text-left">
+                <h2 class="title text-center"> Core Purpose</h2>
+            </div>
+            <!-- <h2 class="section-title mb-2 h1">Core Purpose</h2> -->
+            <div class="row mt-5">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                    <div class="card">
+                        <div class="card-block block-1">
+                            <h3 class="card-title">Functions</h3>
+                            <p class="card-text">Our Services Should meet customers needs, desires and budget.
+                            </p>
+                            <!-- <a href="https://www.fiverr.com/share/qb8D02" title="Read more" class="read-more">Read
+                                more<i class="fa fa-angle-double-right ml-2"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                    <div class="card">
+                        <div class="card-block block-2">
+                            <h3 class="card-title">Finances</h3>
+                            <p class="card-text">Making Tourism Affordable for everyone and packages to be pocket
+                                friendly.
+                            </p>
+                            <!-- <a href="https://www.fiverr.com/share/qb8D02" title="Read more" class="read-more">Read
+                                more<i class="fa fa-angle-double-right ml-2"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                    <div class="card">
+                        <div class="card-block block-3">
+                            <h3 class="card-title">Freedom</h3>
+                            <p class="card-text">Giving everyone freedom to choose their choice of holidays and
+                                customise it as they want.
+                            </p>
+                            <!-- <a href="https://www.fiverr.com/share/qb8D02" title="Read more" class="read-more">Read
+                                more<i class="fa fa-angle-double-right ml-2"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                    <div class="card">
+                        <div class="card-block block-4">
+                            <h3 class="card-title">Feelings</h3>
+                            <p class="card-text">Provide best in class services to give them a feeling of luxury and
+                                satisfaction.Every guest
+                                should feel that they are valued.
+                            </p>
+                            <!-- <a href="https://www.fiverr.com/share/qb8D02" title="Read more" class="read-more">Read
+                                more<i class="fa fa-angle-double-right ml-2"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                    <div class="card">
+                        <div class="card-block block-5">
+                            <h3 class="card-title">Future</h3>
+                            <p class="card-text">The guest should always think of Manzaras for every upcoming Tours.
+                                Every Guest must Mention
+                                that “ Manzaras is our Travel Partner!” .
+                            </p>
+                            <!-- <a href="https://www.fiverr.com/share/qb8D02" title="Read more" class="read-more">Read
+                                more<i class="fa fa-angle-double-right ml-2"></i></a> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                    <div class="card">
+                        <div class="card-block block-6">
+                            <h3 class="card-title">Special title</h3>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.
+                            </p>
+                            <a href="https://www.fiverr.com/share/qb8D02" title="Read more" class="read-more">Read
+                                more<i class="fa fa-angle-double-right ml-2"></i></a>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- intro area start -->
+    <div class="intro-area pd-top-108">
+        <div class="container">
+            <div class="section-title text-center text-left">
+                <h2 class="title text-center"> Mission</h2>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="single-intro style-two" style="text-align: center;">
+                        <div class="thumb">
+                            <img src="assets/img/icons/9.png" alt="img">
+                        </div>
+                        <h4>Create Marketplace</h4>
+                        <!-- <p>Sponsorships are like unicorns or leprechauns, talked about often but they don’t exist. There is one dollars</p> -->
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="single-intro style-two" style="text-align: center;">
+                        <div class="thumb">
+                            <img src="assets/img/icons/10.png" alt="img">
+                        </div>
+                        <h4>Promote Hidden Gems</h4>
+                        <!-- <p>My response usually harsh. Offended at the that a career that’s taken more than a decade to create could be</p> -->
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="single-intro style-two" style="text-align: center;">
+                        <div class="thumb">
+                            <img src="assets/img/icons/12.png" alt="img">
+                        </div>
+                        <h4>Affordable Tourism</h4>
+                        <!-- <p>Aenean sed nibh a magna posuere tempor. Nunc faucibus nunc aliquet. Donec congue, nunc vel tempor</p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- intro area End -->
     <!-- holiday plan area start -->
     <div class="holiday-plan-area tp-holiday-plan-area mg-top-96" style="background-image: url(assets/img/bg/8.png);">
         <div class="container">
@@ -477,8 +857,8 @@
         <div class="copyright-inner border-tp-solid">
             <div class="container">
                 <div class="copyright-text text-center">
-                    &copy;The Manzaras All rights reserved. Designed & Developed <i class="fa fa-heart"></i> by <a
-                        href="#" target="_blank"><span>Probyte Solution, PVT LTD</span></a>
+                    &copy;Manzaras All rights reserved. Designed & Developed <i class="fa fa-heart"></i> by <a href="#"
+                        target="_blank"><span>Probyte Solution, PVT LTD</span></a>
                 </div>
             </div>
         </div>
