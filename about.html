@@ -193,10 +193,15 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            max-width: 1200px;
             margin-block: 2rem;
             gap: 2rem;
-            margin-left: 11%;
+        }
+        .innerContainer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+
         }
 
         .img1 {
@@ -216,6 +221,20 @@
         }
 
         .card1:hover {
+            box-shadow: 0 .1rem 1rem rgba(168, 183, 124, 0.1);
+        }
+
+        .card11 {
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            overflow: hidden;
+            /* box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1); */
+            box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+            border-bottom-right-radius: 2rem;
+        }
+
+        .card11:hover {
             box-shadow: 0 .1rem 1rem rgba(168, 183, 124, 0.1);
         }
 
@@ -256,14 +275,22 @@
             display: flex;
             top: 90px;
         }
+
         .innerIcon {
             color: #fff;
             font-size: 25px;
         }
+
         .card__footer {
             display: flex;
             padding: 1rem;
             margin-top: auto;
+        }
+
+        @media screen and (max-width: 600px) {
+            .card11 {
+                width: 80%;
+            }
         }
     </style>
 </head>
@@ -640,13 +667,15 @@
                     </div>
                 </div>
                 <div class="card1 roundCard" style="background-color: #ede7c2;">
-                    <div class="cardIcon" style="background-color: #de971c"><i class="innerIcon fa fa-handshake-o"></i></div>
+                    <div class="cardIcon" style="background-color: #de971c"><i class="innerIcon fa fa-handshake-o"></i>
+                    </div>
                     <div class="card__body">
                         <p style="color: #de971c;">Commitment</p>
                     </div>
                 </div>
                 <div class="card1 roundCard" style="background-color: #cde8e8;">
-                    <div class="cardIcon" style="background-color: #38abac"><i class="innerIcon fa fa-file-text"></i></div>
+                    <div class="cardIcon" style="background-color: #38abac"><i class="innerIcon fa fa-file-text"></i>
+                    </div>
                     <div class="card__body">
                         <p style="color: #38abac;">Authenticity</p>
                     </div>
@@ -667,7 +696,7 @@
 
         </div>
     </div>
-    
+
     <div class="intro-area pd-top-75" id="what-we-do">
         <div class="container">
             <div class="section-title text-center text-left">
@@ -758,37 +787,39 @@
                 <h2 class="title text-center"> Vision</h2>
             </div>
             <div class="container1">
-                <div class="card1">
-                    <div class="card__body">
-                        <p>Travel Partners in all the states and union Territories of India, Manzaras Travel to be
-                            recognised as Trend Making Organisation</p>
+                <div class="innerContainer">
+                    <div class="card11">
+                        <div class="card__body">
+                            <p>Travel Partners in all the states and union Territories of India, Manzaras Travel to be
+                                recognised as Trend Making Organisation</p>
+                        </div>
                     </div>
-                </div>
-                <div class="card1">
-                    <div class="card__body">
-                        <p>10+ Sales Partners in every state and union territory, Sustainable Tourism</p>
+                    <div class="card11">
+                        <div class="card__body">
+                            <p>10+ Sales Partners in every state and union territory, Sustainable Tourism</p>
+                        </div>
                     </div>
-                </div>
-                <div class="card1">
-                    <div class="card__body">
-                        <p>Build Community of 10 Lakhs + Service Providers</p>
+                    <div class="card11">
+                        <div class="card__body">
+                            <p>Build Community of 10 Lakhs + Service Providers</p>
+                        </div>
                     </div>
-                </div>
-                <div class="card1">
-                    <div class="card__body">
-                        <p>Manzaras Travel to be recognised as Trend Making Organisation</p>
+                    <div class="card11">
+                        <div class="card__body">
+                            <p>Manzaras Travel to be recognised as Trend Making Organisation</p>
+                        </div>
                     </div>
-                </div>
-                <div class="card1">
-                    <div class="card__body">
-                        <p>Sustainable Tourism</p>
+                    <div class="card11">
+                        <div class="card__body">
+                            <p>Sustainable Tourism</p>
+                        </div>
                     </div>
                 </div>
             </div>
 
         </div>
     </div>
- 
+
 
     <!-- intro area start -->
     <div class="intro-area pd-top-108">
@@ -843,7 +874,7 @@
                 </div>
             </div>
             <div class="row">
-            
+
             </div>
         </div>
     </div>
@@ -874,7 +905,7 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-lg-7">
+                <div class="col-lg-10 col-md-12">
                     <div class="footer-widget widget text-center">
                         <div class="widget-contact d-inline-flex">
                             <p class="telephone text-left">
