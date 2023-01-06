@@ -115,9 +115,9 @@
 
     if ($result1 && $result2) {
         if( $subject == "Contact Inquiry"){
-            echo '<script type="text/javascript">alert("Thanks for your interest. Your Query has been sent to info@themanzaras.com");window.location.assign("../contact.html");</script>';    
+            echo '<script type="text/javascript">alert("Thanks for your interest. Your Query has been sent to info@manzaras.com");window.location.assign("../contact.html");</script>';    
         }else{
-            echo '<script type="text/javascript">alert("Thanks for your interest. Your Query has been sent to info@themanzaras.com");window.location.assign("../services.html");</script>';
+            echo '<script type="text/javascript">alert("Thanks for your interest. Your Query has been sent to info@manzaras.com");window.location.assign("../services.html");</script>';
         }
     } else {
       echo"<script>alert('Could not send your query! Please try after sometime.')</script>";
