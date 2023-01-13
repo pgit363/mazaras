@@ -758,85 +758,67 @@
     <div id="formPopup" class="modal">
         <div class="modal-content">
             <span class="close" id="close">X</span>
-            <form class="modal-form" action="./php/send.php" method="post">
-                <h1 id="register">Ask Question</h1>
-                <div class="col-md-8">
-                    <label class="single-input-wrap style-two">
-                        <span class="single-input-title">Name</span>
-                        <input type="text" name="name" id="name" required>
-                    </label>
+            <form class="modal-form" action="">
+                <div class="formInnerDiv">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" value="Name"><br>
                 </div>
-                <div class="col-md-8">
-                    <label class="single-input-wrap style-two">
-                        <span class="single-input-title">Email</span>
-                        <input type="email" name="email" required>
-                    </label>
+                <div class="formInnerDiv">
+                    <label for="email">Email:</label><br>
+                    <input type="text" id="email" name="email" value="Email"><br>
                 </div>
-                <div class="col-md-8">
-                    <label class="single-input-wrap style-two">
-                        <span class="single-input-title">Whatsapp Number</span>
-                        <input type="number" name="mobile" maxlength="10" required>
-                    </label>
+                <div class="formInnerDiv">
+                    <label for="whatsappNo">Whatsapp Number:</label><br>
+                    <input type="text" id="whatsappNo" name="whatsappNo" value="Number"><br>
                 </div>
-                <div class="col-md-8">
-                    <label class="single-input-wrap style-two">
-                        <span class="single-input-title">Services</span>
-                        <select type="select" id="service" name="service" required>
-                            <option value="" selected disabled hidden>Select an Option</option>
-                            <option value="Accomodation">Accomodation</option>
-                            <option value="Ticketing">Ticketing</option>
-                            <option value="Travelling">Travelling</option>
-                            <option value="Cruise">Cruise</option>
-                            <option value="Camping">Camping</option>
-                            <option value="Trek">Trek</option>
-                            <option value="Holiday">Holiday</option>
-                        </select>
-                    </label>
+                <div class="formInnerDiv">
+                    <label for="subject">Subject:</label><br>
+                    <input type="text" id="subject" name="subject" value="Subject"><br>
                 </div>
-                <div class="col-md-8">
-                    <label class="single-input-wrap style-two">
-                        <span class="single-input-title">Subject</span>
-                        <input type="text" name="sub" required>
-                    </label>
+                <div class="formInnerDiv">
+                    <label for="message">Message:</label><br>
+                    <input type="text" id="message" name="message" value="Message"><br><br>
                 </div>
-                <div class="col-md-8">
-                    <label class="single-input-wrap style-two">
-                        <span class="single-input-title">Message</span>
-                        <input type="text" name="msg" required>
-                    </label>
-                </div>
-
-                <div class="col-md-8">
-                    <label class="single-input-wrap style-two">
-                        <!-- <span class="single-input-title">Message</span> -->
-                        <input style="width: 21px; height: fit-content;" type="checkbox" id="scales" name="scales"
-                            required>I hereby accept all <b class="tncLink" id="tnc">Terms and
-                            Conditions</b>
-                        <!-- <label for="scales">&nbsp; I hereby accept all <b class="tncLink" id="tnc">Terms and
-                            Conditions</b></label> -->
-                    </label>
-                </div>
-
-                <!-- <div class="col-md-8" style="width: 60%; display: flex; justify-content: flex-start; margin-bottom: 25px;">
-                    <input style="width: 21px;" type="checkbox" id="scales" name="scales" required>
-                    <label for="scales"> I hereby accept all <b class="tncLink" id="tnc">Terms and
-                            Conditions</b></label>
-                </div> -->
                 <div class="formButton">
                     <button class="btn btn-yellow" id="openForm">
                         <span>Submit
                             <i class="la la-arrow-right"></i></span>
-                    </button>
+                        </button>
                 </div>
             </form>
         </div>
-    </div>
-
-    <div id="tncPopup" class="modal">
-        <div class="modal-content" style="height: 85%;">
-            <span class="close" id="closeTnC">X</span>
-            <embed src="./assets/files/Cancellation and Refund Policy.pdf" type="application/pdf" frameBorder="0"
-                scrolling="auto" height="95%" width="100%"></embed>
+        <!-- <div class="col-xl-5 col-lg-6">
+            <form class="tp-form-wrap">
+                <div class="row">
+                    <div class="col-md-6">
+                        <label class="single-input-wrap style-two">
+                            <span class="single-input-title">Name</span>
+                            <input type="text">
+                        </label>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="single-input-wrap style-two">
+                            <span class="single-input-title">Number</span>
+                            <input type="text">
+                        </label>
+                    </div>
+                    <div class="col-lg-12">
+                        <label class="single-input-wrap style-two">
+                            <span class="single-input-title">Email</span>
+                            <input type="text">
+                        </label>
+                    </div>
+                    <div class="col-lg-12">
+                        <label class="single-input-wrap style-two">
+                            <span class="single-input-title">Message</span>
+                            <textarea></textarea>
+                        </label>
+                    </div>
+                    <div class="col-12">
+                        <a class="btn btn-yellow" href="#">Send Message</a>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
 
