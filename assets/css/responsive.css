@@ -178,6 +178,9 @@
     .single-input-wrap.style-two input {
         height: 45px;
     }
+    .single-input-wrap.style-two select {
+        height: 45px;
+    }
     .login-form-wrap .single-input-wrap .single-input-title {
         top: 5px;
         line-height: 35px;
