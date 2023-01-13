@@ -1,0 +1,1486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Manzaras - Services</title>
+
+    <!-- favicon -->
+    <link rel=icon href="assets/img/1.png" sizes="20x20" type="image/png">
+    <!-- Additional plugin css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
+    <!-- icons -->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- responsive css -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <style>
+        input {
+            width: 50vw;
+            height: 30px;
+        }
+
+        select {
+            width: 50vw;
+            height: 30px;
+            border-color: #666;
+            border-radius: 3px;
+        }
+
+        .tncLink {
+            color: #007aff;
+            text-decoration: underline;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 10;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+
+        .modal-form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .close {
+            color: #000;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .formInnerDiv {
+            padding: 15px;
+        }
+
+        .formButton {
+            display: flex;
+            justify-content: center;
+        }
+
+        .float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 90px;
+            right: 27px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+        }
+
+        .my-float {
+            margin-top: 16px;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 10;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 30%;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .modal-content {
+                width: 90%;
+            }
+        }
+
+        .close {
+            color: #000;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- preloader area start -->
+    <!-- <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="spinner">
+                <div class="dot1"></div>
+                <div class="dot2"></div>
+            </div>
+        </div>
+    </div> -->
+    <!-- preloader area end -->
+    <!-- search popup start -->
+    <!-- <div class="body-overlay" id="body-overlay"></div>
+    <div class="search-popup" id="search-popup">
+        <form action="http://zwin.io/html/viaje/index.html" class="search-form">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search.....">
+            </div>
+            <button type="submit" class="submit-btn"><i class="fa fa-search"></i></button>
+        </form>
+    </div> -->
+    <!-- search popup End -->
+    <!-- //. sign up Popup -->
+    <a href="https://api.whatsapp.com/send?phone=7710906345&text=Hi!" class="float"
+        target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+    </a>
+    <div class="signUp-popup login-register-popup" id="signUp-popup">
+        <div class="login-register-popup-wrap">
+            <div class="row no-gutters">
+                <div class="col-lg-6">
+                    <div class="thumb">
+                        <img src="assets/img/others/signup.png" alt="img">
+                    </div>
+                </div>
+                <div class="col-lg-6 align-self-center">
+                    <div class="shape-thumb">
+                        <img src="assets/img/others/signup-shape.png" alt="img">
+                    </div>
+                    <form class="login-form-wrap">
+                        <h4 class="text-center">Sign Up</h4>
+                        <div class="single-input-wrap style-two">
+                            <input type="text" placeholder="Name">
+                            <span class="single-input-title"><i class="fa fa-user"></i></span>
+                        </div>
+                        <div class="single-input-wrap style-two">
+                            <input type="text" placeholder="Email">
+                            <span class="single-input-title"><i class="fa fa-envelope"></i></span>
+                        </div>
+                        <div class="single-input-wrap style-two">
+                            <input type="text" placeholder="Password">
+                            <span class="single-input-title"><i class="fa fa-lock"></i></span>
+                        </div>
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            <span>Remember me</span>
+                        </label>
+                        <div class="single-input-wrap style-two">
+                            <button class="btn btn-yellow w-100">Sign Up</button>
+                        </div>
+                        <div class="sign-in-btn">I already have an account. <a href="#">Sign In</a></div>
+                        <div class="social-wrap">
+                            <p>Or Continue With</p>
+                            <ul class="social-icon">
+                                <li>
+                                    <a class="facebook" href="#" target="_blank"><i class="fa fa-facebook  "></i></a>
+                                </li>
+                                <li>
+                                    <a class="twitter" href="#" target="_blank"><i class="fa fa-twitter  "></i></a>
+                                </li>
+                                <li>
+                                    <a class="pinterest" href="#" target="_blank"><i class="fa fa-pinterest"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //. sign up Popup End -->
+    <!-- navbar area start -->
+    <div class="top-navbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 topbar-contact-wrap">
+                    <div class="topbar-contact">
+                        <i class="fa fa-phone"></i>
+                        <span class="title">Support:</span>
+                        <span class="number">(+91) 7710906345</span>
+                    </div>
+
+                </div>
+                <div class="col-lg-6">
+                    <div class="nav-right-content float-right">
+                        <div class="social-wrap">
+                            <!-- <p>Or Continue With</p> -->
+                            <ul class="social-icon">
+                                <li>
+                                    <a class="facebook" href="https://www.facebook.com/manzaras.official"
+                                        target="_blank"><i class="fa fa-facebook  "></i></a>
+                                </li>
+                                <!-- <li>
+                                    <a class="twitter" href="#"><i class="fa fa-twitter  "></i></a>
+                                </li>
+                                <li>
+                                    <a class="pinterest" href="#"><i class="fa fa-pinterest"></i></a>
+                                </li> -->
+                                <li>
+                                    <a class="pinterest"
+                                        href="https://instagram.com/manzaras_official?igshid=YmMyMTA2M2Y="
+                                        target="_blank"><i class="fa fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-area navbar-expand-lg nav-style-03">
+        <div class="container nav-container">
+            <div class="responsive-mobile-menu">
+                <div class="mobile-logo">
+                    <a href="index.html">
+                        <img src="assets/img/1.png" style="max-width: 45px;" alt="logo">
+                    </a>
+                </div>
+                <button class="navbar-toggler float-right" type="button" data-toggle="collapse"
+                    data-target="#tp_main_menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggle-icon">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="tp_main_menu">
+                <div class="logo-wrapper desktop-logo">
+                    <a href="index.html" class="main-logo">
+                        <img src="assets/img/3.png" style="max-width: 100px;" alt="logo">
+                    </a>
+                    <a href="index.html" class="sticky-logo">
+                        <img src="assets/img/1.png" style="max-width: 80px;" alt="logo">
+                    </a>
+                </div>
+                <ul class="navbar-nav">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About Us</a>
+                    </li>
+
+
+                    <li class="menu-item-has-children">
+                        <a href="#">Services</a>
+                        <ul class="sub-menu">
+                            <li><a href="services/accomodation.html">Accomodations</a></li>
+                            <li><a href="services/ticketing.html">Ticketing</a></li>
+                            <li><a href="services/travelling.html">Travelling</a></li>
+                            <li><a href="services/cruisess.html">Cruisess</a></li>
+                            <li><a href="services/camping.html">Camping</a></li>
+                            <li><a href="services/treks.html">Treks</a></li>
+                            <li><a href="services/holidays.html">Holidays</a></li>
+                        </ul>
+                    </li>
+
+
+                    <li>
+                        <a href="vacations.html">Vacation's</a>
+                    </li>
+                    <li>
+                        <a href="faq.html">FAQ's</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-right-content">
+                <ul>
+                    <li class="pr-0">
+                        <button class="btn btn-yellow" onclick="callModal();"><span>Book Now<i
+                                    class="la la-arrow-right"></i></span></button>
+                        <!-- <a class="btn btn-yellow" href="#">Book Now <i class="fa fa-paper-plane"></i></a> -->
+                    </li>
+                </ul>
+            </div>
+
+            <div id="formPopup" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="close">X</span>
+                    <iframe
+                        src="https://docs.google.com/forms/d/e/1FAIpQLSeOW4uAoX5Jg3eZXhxXYPtjJj3e692R_94pHhPaRcVWiJNsUg/viewform?embedded=true"
+                        width="640" height="1097" frameborder="0" marginheight="0" marginwidth="0">
+                        Loading…
+                    </iframe>
+                </div>
+            </div>
+
+            <script>
+                function callModal() {
+                    var modal = document.getElementById("formPopup");
+                    // var btn = document.getElementById("openForm");
+                    var span = document.getElementsByClassName("close")[0];
+                    // btn.onclick = function () {
+                    modal.style.display = "block";
+                    // }
+                    span.onclick = function () {
+                        modal.style.display = "none";
+                    }
+                    window.onclick = function (event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                    }
+                }
+
+            </script>
+        </div>
+    </nav>
+    <!-- navbar area end -->
+    <!-- breadcrumb area start -->
+    <div class="breadcrumb-area style-two jarallax" style="background-image:url(assets/img/bg/14.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb-inner">
+                        <h1 class="page-title">Services</h1>
+                        <ul class="page-list">
+                            <li><a href="index.html">Home</a></li>
+                            <li>Services</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- breadcrumb area End -->
+    <!-- tour list area End -->
+    <!-- <div class="tour-list-area pd-top-120">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="single-destinations-list style-four">
+                        <div class="blur-thumb" style="background-image:url(assets/img/destination-list/16.png);"></div>
+                        <div class="details">
+                            <div class="tp-review-meta">
+                                <i class="ic-yellow fa fa-star"></i>
+                                <i class="ic-yellow fa fa-star"></i>
+                                <i class="ic-yellow fa fa-star"></i>
+                                <i class="ic-yellow fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <span>4.0</span>
+                            </div>
+                            <p class="location"><img src="assets/img/icons/1.png" alt="map">Dubai</p>
+                            <h4 class="title"><a href="tour-details.html">Dubai City</a></h4>
+                            <p class="content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat</p>
+                            <div class="list-price-meta">
+                                <ul class="tp-list-meta d-inline-block">
+                                    <li><i class="fa fa-calendar-o"></i> 8oct</li>
+                                    <li><i class="fa fa-clock-o"></i> 4 days</li>
+                                    <li><i class="fa fa-star"></i> 4.3</li>
+                                </ul>
+                                <div class="tp-price-meta d-inline-block">
+                                    <p>Price</p>
+                                    <h2>620 <span>$</span></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-destinations-list style-four">
+                        <div class="blur-thumb" style="background-image:url(assets/img/destination-list/11.png);"></div>
+                        <div class="details">
+                            <div class="tp-review-meta">
+                                <i class="ic-yellow fa fa-star"></i>
+                                <i class="ic-yellow fa fa-star"></i>
+                                <i class="ic-yellow fa fa-star"></i>
+                                <i class="ic-yellow fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <span>4.0</span>
+                            </div>
+                            <p class="location"><img src="assets/img/icons/1.png" alt="map">France</p>
+                            <h4 class="title"><a href="tour-details.html">Eiffel Tower</a></h4>
+                            <p class="content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat</p>
+                            <div class="list-price-meta">
+                                <ul class="tp-list-meta d-inline-block">
+                                    <li><i class="fa fa-calendar-o"></i> 8oct</li>
+                                    <li><i class="fa fa-clock-o"></i> 4 days</li>
+                                    <li><i class="fa fa-star"></i> 4.3</li>
+                                </ul>
+                                <div class="tp-price-meta d-inline-block">
+                                    <p>Price</p>
+                                    <h2>620 <span>$</span></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-destinations-list style-four">
+                        <div class="blur-thumb" style="background-image:url(assets/img/destination-list/12.png);"></div>
+                        <div class="details">
+                            <div class="tp-review-meta">
+                                <i class="ic-yellow fa fa-star"></i>
+                                <i class="ic-yellow fa fa-star"></i>
+                                <i class="ic-yellow fa fa-star"></i>
+                                <i class="ic-yellow fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <span>4.0</span>
+                            </div>
+                            <p class="location"><img src="assets/img/icons/1.png" alt="map">Italy</p>
+                            <h4 class="title"><a href="tour-details.html">Colosseum, Rome</a></h4>
+                            <p class="content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat</p>
+                            <div class="list-price-meta">
+                                <ul class="tp-list-meta d-inline-block">
+                                    <li><i class="fa fa-calendar-o"></i> 8oct</li>
+                                    <li><i class="fa fa-clock-o"></i> 4 days</li>
+                                    <li><i class="fa fa-star"></i> 4.3</li>
+                                </ul>
+                                <div class="tp-price-meta d-inline-block">
+                                    <p>Price</p>
+                                    <h2>620 <span>$</span></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-destinations-list style-four">
+                        <div class="blur-thumb" style="background-image:url(assets/img/destination-list/5.png);"></div>
+                        <div class="details">
+                            <div class="tp-review-meta">
+                                <i class="ic-yellow fa fa-star"></i>
+                                <i class="ic-yellow fa fa-star"></i>
+                                <i class="ic-yellow fa fa-star"></i>
+                                <i class="ic-yellow fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <span>4.0</span>
+                            </div>
+                            <p class="location"><img src="assets/img/icons/1.png" alt="map">Indonesia</p>
+                            <h4 class="title"><a href="tour-details.html">Bali Province</a></h4>
+                            <p class="content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat</p>
+                            <div class="list-price-meta">
+                                <ul class="tp-list-meta d-inline-block">
+                                    <li><i class="fa fa-calendar-o"></i> 8oct</li>
+                                    <li><i class="fa fa-clock-o"></i> 4 days</li>
+                                    <li><i class="fa fa-star"></i> 4.3</li>
+                                </ul>
+                                <div class="tp-price-meta d-inline-block">
+                                    <p>Price</p>
+                                    <h2>620 <span>$</span></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-destinations-list style-four">
+                        <div class="blur-thumb" style="background-image:url(assets/img/destination-list/7.png);"></div>
+                        <div class="details">
+                            <div class="tp-review-meta">
+                                <i class="ic-yellow fa fa-star"></i>
+                                <i class="ic-yellow fa fa-star"></i>
+                                <i class="ic-yellow fa fa-star"></i>
+                                <i class="ic-yellow fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <span>4.0</span>
+                            </div>
+                            <p class="location"><img src="assets/img/icons/1.png" alt="map">Spain</p>
+                            <h4 class="title"><a href="tour-details.html">Barcelona city beach</a></h4>
+                            <p class="content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat</p>
+                            <div class="list-price-meta">
+                                <ul class="tp-list-meta d-inline-block">
+                                    <li><i class="fa fa-calendar-o"></i> 8oct</li>
+                                    <li><i class="fa fa-clock-o"></i> 4 days</li>
+                                    <li><i class="fa fa-star"></i> 4.3</li>
+                                </ul>
+                                <div class="tp-price-meta d-inline-block">
+                                    <p>Price</p>
+                                    <h2>620 <span>$</span></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="single-destinations-list style-four">
+                        <div class="blur-thumb" style="background-image:url(assets/img/destination-list/9.png);"></div>
+                        <div class="details">
+                            <div class="tp-review-meta">
+                                <i class="ic-yellow fa fa-star"></i>
+                                <i class="ic-yellow fa fa-star"></i>
+                                <i class="ic-yellow fa fa-star"></i>
+                                <i class="ic-yellow fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <span>4.0</span>
+                            </div>
+                            <p class="location"><img src="assets/img/icons/1.png" alt="map">Maldives</p>
+                            <h4 class="title"><a href="tour-details.html">Hurawalhi Island</a></h4>
+                            <p class="content">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat</p>
+                            <div class="list-price-meta">
+                                <ul class="tp-list-meta d-inline-block">
+                                    <li><i class="fa fa-calendar-o"></i> 8oct</li>
+                                    <li><i class="fa fa-clock-o"></i> 4 days</li>
+                                    <li><i class="fa fa-star"></i> 4.3</li>
+                                </ul>
+                                <div class="tp-price-meta d-inline-block">
+                                    <p>Price</p>
+                                    <h2>620 <span>$</span></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 text-md-center text-left">
+                    <div class="tp-pagination text-md-center text-left d-inline-block mt-4">
+                        <ul>
+                            <li><a class="prev page-numbers" href="#"><i class="la la-long-arrow-left"></i></a></li>
+                            <li><span class="page-numbers">1</span></li>
+                            <li><span class="page-numbers current">2</span></li>
+                            <li><a class="page-numbers" href="#">3</a></li>
+                            <li><a class="page-numbers" href="#">4</a></li>
+                            <li><a class="next page-numbers" href="#"><i class="la la-long-arrow-right"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- tour list area End -->
+
+    <!-- services area start -->
+    <div class="blog-area pd-top-120">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="single-blog single-blog-wrap style-two">
+                        <div class="thumb single-blog-left-wrap">
+                            <img src="assets/img/services/10.jpg" alt="blog">
+                        </div>
+                        <div class="single-blog-details single-blog-right-wrap">
+                            <!-- <a class="tag" href="#">Europe</a>
+                                     <p class="date">19 September 2019</p> -->
+                            <h4 class="title">Accomodations</h4>
+                            <p class="content">We can help you find accommodation in your preferred location within your
+                                budget</p>
+                            <button class="btn btn-yellow" onclick="callModal();"><span>Get Details<i
+                                        class="la la-arrow-right"></i></span></button>
+                            <!-- 
+                            <a class="btn btn-yellow" href="#"><span>Get Details<i
+                                        class="la la-arrow-right"></i></span></a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="single-blog style-three">
+                                <div class="thumb">
+                                    <img src="assets/img/services/1.jpg" alt="blog">
+                                </div>
+                                <div class="single-blog-details-wrap">
+                                    <div class="single-blog-details text-center">
+                                        <!-- <a class="tag" href="#">Europe</a> -->
+                                        <!-- <p class="date">19 September 2019</p> -->
+                                        <h4 class="title">Hotels</h4>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="single-blog style-three">
+                                <div class="thumb">
+                                    <img src="assets/img/services/2.jpg" alt="blog">
+                                </div>
+                                <div class="single-blog-details-wrap">
+                                    <div class="single-blog-details text-center">
+                                        <!-- <a class="tag" href="#">Europe</a> -->
+                                        <!-- <p class="date">18 September 2019</p> -->
+                                        <h4 class="title">Resorts</h4>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="single-blog style-three">
+                                <div class="thumb">
+                                    <img src="assets/img/services/3.jpg" alt="blog">
+                                </div>
+                                <div class="single-blog-details-wrap">
+                                    <div class="single-blog-details text-center">
+                                        <!-- <a class="tag" href="#">Europe</a> -->
+                                        <!-- <p class="date">18 September 2019</p> -->
+                                        <h4 class="title">Villas</h4>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="single-blog style-three">
+                                <div class="thumb">
+                                    <img src="assets/img/services/4.jpg" alt="blog">
+                                </div>
+                                <div class="single-blog-details-wrap">
+                                    <div class="single-blog-details text-center">
+                                        <!-- <a class="tag" href="#">Europe</a> -->
+                                        <!-- <p class="date">19 September 2019</p> -->
+                                        <h4 class="title">Homestays</h4>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="single-blog style-three">
+                                <div class="thumb">
+                                    <img src="assets/img/services/5.jpg" alt="blog">
+                                </div>
+                                <div class="single-blog-details-wrap">
+                                    <div class="single-blog-details text-center">
+                                        <!-- <a class="tag" href="#">Europe</a> -->
+                                        <!-- <p class="date">19 September 2019</p> -->
+                                        <h4 class="title">Holiday Homes</h4>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="single-blog style-three">
+                                <div class="thumb">
+                                    <img src="assets/img/services/7.jpg" alt="blog">
+                                </div>
+                                <div class="single-blog-details-wrap">
+                                    <div class="single-blog-details text-center">
+                                        <!-- <a class="tag" href="#">Europe</a> -->
+                                        <!-- <p class="date">18 September 2019</p> -->
+                                        <h4 class="title">Business Hotels</h4>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="single-blog style-three">
+                                <div class="thumb">
+                                    <img src="assets/img/services/8.jpg" alt="blog">
+                                </div>
+                                <div class="single-blog-details-wrap">
+                                    <div class="single-blog-details text-center">
+                                        <!-- <a class="tag" href="#">Europe</a> -->
+                                        <!-- <p class="date">18 September 2019</p> -->
+                                        <h4 class="title">House Boats</h4>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="single-blog style-three">
+                                <div class="thumb">
+                                    <img src="assets/img/services/9.jpg" alt="blog">
+                                </div>
+                                <div class="single-blog-details-wrap">
+                                    <div class="single-blog-details text-center">
+                                        <!-- <a class="tag" href="#">Europe</a> -->
+                                        <!-- <p class="date">19 September 2019</p> -->
+                                        <h4 class="title">Bed and Breakfast</h4>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- services area End -->
+
+
+    <div id="formPopup" class="modal">
+        <div class="modal-content">
+            <span class="close" id="close">X</span>
+            <form class="modal-form" action="">
+                <div class="formInnerDiv">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" value="Name"><br>
+                </div>
+                <div class="formInnerDiv">
+                    <label for="email">Email:</label><br>
+                    <input type="text" id="email" name="email" value="Email"><br>
+                </div>
+                <div class="formInnerDiv">
+                    <label for="whatsappNo">Whatsapp Number:</label><br>
+                    <input type="text" id="whatsappNo" name="whatsappNo" value="Number"><br>
+                </div>
+                <div class="formInnerDiv">
+                    <label for="subject">Subject:</label><br>
+                    <input type="text" id="subject" name="subject" value="Subject"><br>
+                </div>
+                <div class="formInnerDiv">
+                    <label for="message">Message:</label><br>
+                    <input type="text" id="message" name="message" value="Message"><br><br>
+                </div>
+                <div class="formButton">
+                    <button class="btn btn-yellow" id="openForm">
+                        <span>Submit
+                            <i class="la la-arrow-right"></i></span>
+                        </button>
+                </div>
+            </form>
+        </div>
+        <!-- <div class="col-xl-5 col-lg-6">
+            <form class="tp-form-wrap">
+                <div class="row">
+                    <div class="col-md-6">
+                        <label class="single-input-wrap style-two">
+                            <span class="single-input-title">Name</span>
+                            <input type="text">
+                        </label>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="single-input-wrap style-two">
+                            <span class="single-input-title">Number</span>
+                            <input type="text">
+                        </label>
+                    </div>
+                    <div class="col-lg-12">
+                        <label class="single-input-wrap style-two">
+                            <span class="single-input-title">Email</span>
+                            <input type="text">
+                        </label>
+                    </div>
+                    <div class="col-lg-12">
+                        <label class="single-input-wrap style-two">
+                            <span class="single-input-title">Message</span>
+                            <textarea></textarea>
+                        </label>
+                    </div>
+                    <div class="col-12">
+                        <a class="btn btn-yellow" href="#">Send Message</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <!-- services area start -->
+    <div class="blog-area pd-top-120">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="single-blog single-blog-wrap style-two">
+                        <div class="thumb single-blog-left-wrap">
+                            <img src="assets/img/services/ticketing/1.jpg" alt="blog">
+                        </div>
+                        <div class="single-blog-details single-blog-right-wrap">
+                            <!-- <a class="tag" href="#">Europe</a>
+                                 <p class="date">19 September 2019</p> -->
+                            <h4 class="title">Ticketing</h4>
+                            <p class="content">We can help you reserve your tickets hassle free with priority assistance
+                            </p>
+                            <button class="btn btn-yellow" onclick="callModal();"><span>Get Details<i
+                                        class="la la-arrow-right"></i></span></button>
+                            <!-- <a class="btn btn-yellow"  id="openForm"><span>Read More<i
+                                        class="la la-arrow-right"></i></span></a> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="single-blog style-three">
+                                <div class="thumb">
+                                    <img src="assets/img/services/ticketing/2.jpg" alt="blog">
+                                </div>
+                                <div class="single-blog-details-wrap">
+                                    <div class="single-blog-details text-center">
+                                        <!-- <a class="tag" href="#">Europe</a> -->
+                                        <!-- <p class="date">19 September 2019</p> -->
+                                        <h4 class="title">Flight</h4>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="single-blog style-three">
+                                <div class="thumb">
+                                    <img src="assets/img/services/ticketing/3.jpg" alt="blog">
+                                </div>
+                                <div class="single-blog-details-wrap">
+                                    <div class="single-blog-details text-center">
+                                        <!-- <a class="tag" href="#">Europe</a> -->
+                                        <!-- <p class="date">18 September 2019</p> -->
+                                        <h4 class="title">Train</h4>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="single-blog style-three">
+                                <div class="thumb">
+                                    <img src="assets/img/services/ticketing/4.jpg" alt="blog">
+                                </div>
+                                <div class="single-blog-details-wrap">
+                                    <div class="single-blog-details text-center">
+                                        <!-- <a class="tag" href="#">Europe</a> -->
+                                        <!-- <p class="date">18 September 2019</p> -->
+                                        <h4 class="title">Bus</h4>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- services area End -->
+
+    <!-- services area start -->
+    <div class="blog-area pd-top-120">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="single-blog single-blog-wrap style-two">
+                        <div class="thumb single-blog-left-wrap">
+                            <img src="assets/img/services/travelling/5.jpg" alt="blog">
+                        </div>
+                        <div class="single-blog-details single-blog-right-wrap">
+                            <!-- <a class="tag" href="#">Europe</a>
+                                 <p class="date">19 September 2019</p> -->
+                            <h4 class="title">Travelling</h4>
+                            <p class="content">Describe your requirements to us and we'll provide you with the cheapest
+                                rates for rentals.</p>
+                                <button class="btn btn-yellow"  onclick="callModal();"><span>Get Details<i
+                                    class="la la-arrow-right"></i></span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="single-blog style-three">
+                                <div class="thumb">
+                                    <img src="assets/img/services/travelling/1.jpg" alt="blog">
+                                </div>
+                                <div class="single-blog-details-wrap">
+                                    <div class="single-blog-details text-center">
+                                        <!-- <a class="tag" href="#">Europe</a> -->
+                                        <!-- <p class="date">19 September 2019</p> -->
+                                        <h4 class="title">Cars on Hire</h4>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="single-blog style-three">
+                                <div class="thumb">
+                                    <img src="assets/img/services/travelling/2.jpg" alt="blog">
+                                </div>
+                                <div class="single-blog-details-wrap">
+                                    <div class="single-blog-details text-center">
+                                        <!-- <a class="tag" href="#">Europe</a> -->
+                                        <!-- <p class="date">18 September 2019</p> -->
+                                        <h4 class="title">Mini Bus on Hire</h4>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="single-blog style-three">
+                                <div class="thumb">
+                                    <img src="assets/img/services/travelling/3.jpg" alt="blog">
+                                </div>
+                                <div class="single-blog-details-wrap">
+                                    <div class="single-blog-details text-center">
+                                        <!-- <a class="tag" href="#">Europe</a> -->
+                                        <!-- <p class="date">18 September 2019</p> -->
+                                        <h4 class="title">Force Travellers on Hire</h4>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="single-blog style-three">
+                                <div class="thumb">
+                                    <img src="assets/img/services/travelling/4.jpg" alt="blog">
+                                </div>
+                                <div class="single-blog-details-wrap">
+                                    <div class="single-blog-details text-center">
+                                        <!-- <a class="tag" href="#">Europe</a> -->
+                                        <!-- <p class="date">18 September 2019</p> -->
+                                        <h4 class="title">Bus on Hire</h4>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- services area End -->
+
+
+    <!-- services area start -->
+    <div class="blog-area pd-top-120">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="single-blog single-blog-wrap style-two">
+                        <div class="thumb single-blog-left-wrap">
+                            <img src="assets/img/services/cruises/5.jpg" alt="blog">
+                        </div>
+                        <div class="single-blog-details single-blog-right-wrap">
+                            <!-- <a class="tag" href="#">Europe</a>
+                                     <p class="date">19 September 2019</p> -->
+                            <h4 class="title">Cruises</h4>
+                            <p class="content">Our team is here to help! Get expert advice on exotic cruising
+                                destinations.</p>
+                            <button class="btn btn-yellow"  onclick="callModal();"><span>Get Details<i
+                                                    class="la la-arrow-right"></i></span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="single-blog style-three">
+                                <div class="thumb">
+                                    <img src="assets/img/services/cruises/1.jpg" alt="blog">
+                                </div>
+                                <div class="single-blog-details-wrap">
+                                    <div class="single-blog-details text-center">
+                                        <!-- <a class="tag" href="#">Europe</a> -->
+                                        <!-- <p class="date">19 September 2019</p> -->
+                                        <h4 class="title">Mumbai</h4>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="single-blog style-three">
+                                <div class="thumb">
+                                    <img src="assets/img/services/cruises/2.jpg" alt="blog">
+                                </div>
+                                <div class="single-blog-details-wrap">
+                                    <div class="single-blog-details text-center">
+                                        <!-- <a class="tag" href="#">Europe</a> -->
+                                        <!-- <p class="date">18 September 2019</p> -->
+                                        <h4 class="title">Goa</h4>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="single-blog style-three">
+                                <div class="thumb">
+                                    <img src="assets/img/services/cruises/3.jpg" alt="blog">
+                                </div>
+                                <div class="single-blog-details-wrap">
+                                    <div class="single-blog-details text-center">
+                                        <!-- <a class="tag" href="#">Europe</a> -->
+                                        <!-- <p class="date">18 September 2019</p> -->
+                                        <h4 class="title">Lakshadweep</h4>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="single-blog style-three">
+                                <div class="thumb">
+                                    <img src="assets/img/services/cruises/4.jpg" alt="blog">
+                                </div>
+                                <div class="single-blog-details-wrap">
+                                    <div class="single-blog-details text-center">
+                                        <!-- <a class="tag" href="#">Europe</a> -->
+                                        <!-- <p class="date">18 September 2019</p> -->
+                                        <h4 class="title">Kochi</h4>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- services area End -->
+
+    <!-- services area start -->
+    <div class="blog-area pd-top-120">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="single-blog single-blog-wrap style-two">
+                        <div class="thumb single-blog-left-wrap">
+                            <img src="assets/img/services/camping/1.jpg" alt="blog">
+                        </div>
+                        <div class="single-blog-details single-blog-right-wrap">
+                            <!-- <a class="tag" href="#">Europe</a>
+                                         <p class="date">19 September 2019</p> -->
+                            <h4 class="title">Camping</h4>
+                            <p class="content">Let our team help you find campsites at the lowest prices.</p>
+                            <button class="btn btn-yellow"  onclick="callModal();"><span>Get Details<i
+                                                    class="la la-arrow-right"></i></span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="single-blog style-three">
+                                <div class="thumb">
+                                    <img src="assets/img/services/cruises/1.jpg" alt="blog">
+                                </div>
+                                <div class="single-blog-details-wrap">
+                                    <div class="single-blog-details text-center">
+                                        <!-- <a class="tag" href="#">Europe</a> -->
+                                        <!-- <p class="date">19 September 2019</p> -->
+                                        <h4 class="title">Pawna</h4>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="single-blog style-three">
+                                <div class="thumb">
+                                    <img src="assets/img/services/cruises/2.jpg" alt="blog">
+                                </div>
+                                <div class="single-blog-details-wrap">
+                                    <div class="single-blog-details text-center">
+                                        <!-- <a class="tag" href="#">Europe</a> -->
+                                        <!-- <p class="date">18 September 2019</p> -->
+                                        <h4 class="title">Karjat</h4>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="single-blog style-three">
+                                <div class="thumb">
+                                    <img src="assets/img/services/cruises/3.jpg" alt="blog">
+                                </div>
+                                <div class="single-blog-details-wrap">
+                                    <div class="single-blog-details text-center">
+                                        <!-- <a class="tag" href="#">Europe</a> -->
+                                        <!-- <p class="date">18 September 2019</p> -->
+                                        <h4 class="title">Alibaug</h4>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="single-blog style-three">
+                                <div class="thumb">
+                                    <img src="assets/img/services/cruises/4.jpg" alt="blog">
+                                </div>
+                                <div class="single-blog-details-wrap">
+                                    <div class="single-blog-details text-center">
+                                        <!-- <a class="tag" href="#">Europe</a> -->
+                                        <!-- <p class="date">18 September 2019</p> -->
+                                        <h4 class="title">Panshet – Pune</h4>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="single-blog style-three">
+                                <div class="thumb">
+                                    <img src="assets/img/services/cruises/1.jpg" alt="blog">
+                                </div>
+                                <div class="single-blog-details-wrap">
+                                    <div class="single-blog-details text-center">
+                                        <!-- <a class="tag" href="#">Europe</a> -->
+                                        <!-- <p class="date">19 September 2019</p> -->
+                                        <h4 class="title">Rajasthan</h4>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="single-blog style-three">
+                                <div class="thumb">
+                                    <img src="assets/img/services/cruises/2.jpg" alt="blog">
+                                </div>
+                                <div class="single-blog-details-wrap">
+                                    <div class="single-blog-details text-center">
+                                        <!-- <a class="tag" href="#">Europe</a> -->
+                                        <!-- <p class="date">18 September 2019</p> -->
+                                        <h4 class="title">Uttarakhand</h4>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="single-blog style-three">
+                                <div class="thumb">
+                                    <img src="assets/img/services/cruises/3.jpg" alt="blog">
+                                </div>
+                                <div class="single-blog-details-wrap">
+                                    <div class="single-blog-details text-center">
+                                        <!-- <a class="tag" href="#">Europe</a> -->
+                                        <!-- <p class="date">18 September 2019</p> -->
+                                        <h4 class="title">Ladakh</h4>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="single-blog style-three">
+                                <div class="thumb">
+                                    <img src="assets/img/services/cruises/4.jpg" alt="blog">
+                                </div>
+                                <div class="single-blog-details-wrap">
+                                    <div class="single-blog-details text-center">
+                                        <!-- <a class="tag" href="#">Europe</a> -->
+                                        <!-- <p class="date">18 September 2019</p> -->
+                                        <h4 class="title">Kasol – Parvati Valley</h4>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="single-blog style-three">
+                                <div class="thumb">
+                                    <img src="assets/img/services/cruises/4.jpg" alt="blog">
+                                </div>
+                                <div class="single-blog-details-wrap">
+                                    <div class="single-blog-details text-center">
+                                        <!-- <a class="tag" href="#">Europe</a> -->
+                                        <!-- <p class="date">18 September 2019</p> -->
+                                        <h4 class="title">Himalayas</h4>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- services area End -->
+
+
+    <!-- services area start -->
+    <div class="blog-area pd-top-120">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="single-blog single-blog-wrap style-two">
+                        <div class="thumb single-blog-left-wrap">
+                            <img src="assets/img/services/trek/1.jpg" alt="blog">
+                        </div>
+                        <div class="single-blog-details single-blog-right-wrap">
+                            <!-- <a class="tag" href="#">Europe</a>
+                                     <p class="date">19 September 2019</p> -->
+                            <h4 class="title">Trekking</h4>
+                            <p class="content">Our Trekking Experts will assist you in planning your trek.</p>
+                            <button class="btn btn-yellow"  onclick="callModal();"><span>Get Details<i
+                                                    class="la la-arrow-right"></i></span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="single-blog style-three">
+                                <div class="thumb">
+                                    <img src="assets/img/services/cruises/1.jpg" alt="blog">
+                                </div>
+                                <div class="single-blog-details-wrap">
+                                    <div class="single-blog-details text-center">
+                                        <!-- <a class="tag" href="#">Europe</a> -->
+                                        <!-- <p class="date">19 September 2019</p> -->
+                                        <h4 class="title">Himachal</h4>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="single-blog style-three">
+                                <div class="thumb">
+                                    <img src="assets/img/services/cruises/2.jpg" alt="blog">
+                                </div>
+                                <div class="single-blog-details-wrap">
+                                    <div class="single-blog-details text-center">
+                                        <!-- <a class="tag" href="#">Europe</a> -->
+                                        <!-- <p class="date">18 September 2019</p> -->
+                                        <h4 class="title">Shapni</h4>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="single-blog style-three">
+                                <div class="thumb">
+                                    <img src="assets/img/services/cruises/3.jpg" alt="blog">
+                                </div>
+                                <div class="single-blog-details-wrap">
+                                    <div class="single-blog-details text-center">
+                                        <!-- <a class="tag" href="#">Europe</a> -->
+                                        <!-- <p class="date">18 September 2019</p> -->
+                                        <h4 class="title">Raghupur Fort</h4>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="single-blog style-three">
+                                <div class="thumb">
+                                    <img src="assets/img/services/cruises/4.jpg" alt="blog">
+                                </div>
+                                <div class="single-blog-details-wrap">
+                                    <div class="single-blog-details text-center">
+                                        <!-- <a class="tag" href="#">Europe</a> -->
+                                        <!-- <p class="date">18 September 2019</p> -->
+                                        <h4 class="title">Lambhari</h4>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="single-blog style-three">
+                                <div class="thumb">
+                                    <img src="assets/img/services/cruises/3.jpg" alt="blog">
+                                </div>
+                                <div class="single-blog-details-wrap">
+                                    <div class="single-blog-details text-center">
+                                        <!-- <a class="tag" href="#">Europe</a> -->
+                                        <!-- <p class="date">18 September 2019</p> -->
+                                        <h4 class="title">Chorni</h4>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="single-blog style-three">
+                                <div class="thumb">
+                                    <img src="assets/img/services/cruises/4.jpg" alt="blog">
+                                </div>
+                                <div class="single-blog-details-wrap">
+                                    <div class="single-blog-details text-center">
+                                        <!-- <a class="tag" href="#">Europe</a> -->
+                                        <!-- <p class="date">18 September 2019</p> -->
+                                        <h4 class="title">Khorna</h4>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- services area End -->
+    <!-- newslatter area Start -->
+    <div class="newslatter-area pd-top-108">
+        <div class="container">
+
+        </div>
+    </div>
+    <!-- newslatter area End -->
+    <!-- footer area start -->
+    <footer class="footer-area style-three" style="background-image: url(assets/img/bg/2.png);">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="about_us_widget text-center">
+                        <a href="index.html" class="footer-logo">
+                            <img src="assets/img/1.png" alt="footerlogo">
+                        </a>
+                    </div>
+                    <div class="footer-widget widget text-center">
+                        <ul class="widget_nav_menu text-center">
+                            <!-- <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li> -->
+                            <li><a href="./assets/files/Website Terms & Conditions.pdf" target="_blank">Terms &
+                                    Conditions</a></li>
+                            <li><a href="./assets/files/Privacy Policy.pdf" target="_blank">Privacy Policy</a></li>
+                            <li><a href="./assets/files/Cancellation and Refund Policy.pdf" target="_blank">Cancellation
+                                    & Refund Policy</a></li>
+                            <!-- <li><a href="contact.html">Contact Us</a></li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="footer-widget widget text-center">
+                        <div class="widget-contact d-inline-flex">
+                            <p class="telephone text-left">
+                                <i class="fa fa-phone base-color"></i>
+                                <span>
+                                    +091 7710906345
+                                </span>
+                            </p>
+                            <p class="location text-left">
+                                <i class="fa fa-envelope-o"></i>
+                                <span>info@manzaras.com</span>
+                            </p>
+                            <p class="text-left">
+                                <i class="fa fa-map-marker"></i>
+                                <span>Gaondevi, Thane West, Maharashtra - 400602</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-inner border-tp-solid">
+            <div class="container">
+                <div class="copyright-text text-center">
+                    &copy;Manzaras All rights reserved. Designed & Developed <i class="fa fa-heart"></i> by <a
+                        href="#" target="_blank"><span>Probyte Solution, PVT LTD</span></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer area end -->
+    <!-- back to top area start -->
+    <div class="back-to-top">
+        <span class="back-top"><i class="fa fa-angle-up"></i></span>
+    </div>
+    <!-- back to top area end -->
+    <script>
+        function callModal() {
+            var modal = document.getElementById("formPopup");
+            // var btn = document.getElementById("openForm");
+            var span = document.getElementsByClassName("close")[0];
+            // btn.onclick = function () {
+            modal.style.display = "block";
+            // }
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        }
+
+    </script>
+    <script>
+        var tncPopup = document.getElementById("tncPopup");
+        var tncbtn = document.getElementById("tnc");
+        var tncspan = document.getElementById("closeTnC");
+        tncbtn.onclick = function () {
+            tncPopup.style.display = "block";
+        }
+        tncspan.onclick = function () {
+            tncPopup.style.display = "none";
+        }
+        window.onclick = function (event) {
+            if (event.target == tncPopup) {
+                tncPopup.style.display = "none";
+            }
+        }
+    </script>
+    <!-- Additional plugin js -->
+    <script src="assets/js/jquery-2.2.4.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <script src="assets/js/jarallax.min.js"></script>
+    <!-- main js -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
