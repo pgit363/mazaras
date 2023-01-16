@@ -110,8 +110,8 @@
         }
 
         /* Settings - feel free to play with these */
-        $overlay_opacity: 0.3; // 0-1
-        $overlay_pattern: 'https://d3k5xyayaartr5.cloudfront.net/_assets/pattern-overlays/patterns/black-medium-checks.png'; // Grab the url of a png from here - http://html5backgroundvideos.com/pattern-overlays/
+        /* $overlay_opacity: 0.3; // 0-1 */
+        /* $overlay_pattern: 'https://d3k5xyayaartr5.cloudfront.net/_assets/pattern-overlays/patterns/black-medium-checks.png'; // Grab the url of a png from here - http://html5backgroundvideos.com/pattern-overlays/ */
 
         @import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
 
@@ -134,7 +134,7 @@
             pointer-events: none;
             /* Allows right click menu on the video */
             background: url($overlay_pattern) left top repeat;
-            opacity: $overlay_opacity;
+            /* opacity: $overlay_opacity; */
         }
 
         .video-hero--content {
@@ -701,6 +701,13 @@
             </div>
         </div>
     </div>
+
+    <div class="video-container">
+        <video autoplay muted loop>
+            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4" />
+        </video>
+    </div>
+
     <!-- banner area end -->
     <!-- search area start -->
     <!-- <div class="search-area tp-main-search-area tp-main-search-3">
