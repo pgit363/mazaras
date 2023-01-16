@@ -3134,6 +3134,9 @@ ul.wp-block-latest-posts.is-grid.alignwide {
 @media all and (max-width: 991px) {
   .responsive-mobile-menu {
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .responsive-mobile-menu .mobile-logo img {
@@ -3143,7 +3146,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   }
 
   .responsive-mobile-menu .navbar-toggler {
-    margin-top: 14px;
+    /* margin-top: 14px; */
     padding: 0 0 0 20px;
   }
 
