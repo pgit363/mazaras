@@ -29,6 +29,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
     <style>
+        .video-container {
+            width: 100vw;
+        }
         .float {
             position: fixed;
             width: 60px;
@@ -447,7 +450,9 @@
                     <a href="index.html">
                         <img src="assets/img/1.png" style="max-width: 45px;" alt="logo">
                     </a>
-                    <span class="logo-text">MANZARAS</span>
+                </div>
+                <div class="mobile-logo">
+                        <span class="logo-text">MANZARAS</span>
                 </div>
 
                 <button class="navbar-toggler float-right" type="button" data-toggle="collapse"
@@ -702,8 +707,8 @@
         </div>
     </div>
 
-    <div class="container">
-        <video autoplay muted loop>
+    <div class="video-container">
+        <video autoplay muted loop width="100%">
             <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4" />
         </video>
     </div>
