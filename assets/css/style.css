@@ -3139,7 +3139,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   .responsive-mobile-menu .mobile-logo img {
     width: 115px;
     height: auto;
-    margin-top: 5px;
+    /* margin-top: 5px; */
   }
 
   .responsive-mobile-menu .navbar-toggler {
