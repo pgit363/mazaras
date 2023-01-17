@@ -3131,6 +3131,13 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   display: none;
 }
 
+@media only screen and (max-width: 550px) {
+.navbar-area .nav-container .desktop-logo {
+  display: none;
+
+}
+}
+
 @media all and (max-width: 991px) {
   .responsive-mobile-menu {
     width: 100%;
