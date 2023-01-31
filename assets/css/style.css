@@ -3131,19 +3131,29 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   display: none;
 }
 
+@media only screen and (max-width: 550px) {
+.navbar-area .nav-container .desktop-logo {
+  display: none;
+
+}
+}
+
 @media all and (max-width: 991px) {
   .responsive-mobile-menu {
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .responsive-mobile-menu .mobile-logo img {
     width: 115px;
     height: auto;
-    margin-top: 5px;
+    /* margin-top: 5px; */
   }
 
   .responsive-mobile-menu .navbar-toggler {
-    margin-top: 14px;
+    /* margin-top: 14px; */
     padding: 0 0 0 20px;
   }
 

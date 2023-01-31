@@ -29,6 +29,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
     <style>
+        .video-container {
+            width: 100vw;
+        }
         .float {
             position: fixed;
             width: 60px;
@@ -110,8 +113,8 @@
         }
 
         /* Settings - feel free to play with these */
-        $overlay_opacity: 0.3; // 0-1
-        $overlay_pattern: 'https://d3k5xyayaartr5.cloudfront.net/_assets/pattern-overlays/patterns/black-medium-checks.png'; // Grab the url of a png from here - http://html5backgroundvideos.com/pattern-overlays/
+        /* $overlay_opacity: 0.3; // 0-1 */
+        /* $overlay_pattern: 'https://d3k5xyayaartr5.cloudfront.net/_assets/pattern-overlays/patterns/black-medium-checks.png'; // Grab the url of a png from here - http://html5backgroundvideos.com/pattern-overlays/ */
 
         @import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
 
@@ -134,7 +137,7 @@
             pointer-events: none;
             /* Allows right click menu on the video */
             background: url($overlay_pattern) left top repeat;
-            opacity: $overlay_opacity;
+            /* opacity: $overlay_opacity; */
         }
 
         .video-hero--content {
@@ -447,7 +450,9 @@
                     <a href="index.html">
                         <img src="assets/img/1.png" style="max-width: 45px;" alt="logo">
                     </a>
-                    <span class="logo-text">MANZARAS</span>
+                </div>
+                <div class="mobile-logo">
+                        <span class="logo-text">MANZARAS</span>
                 </div>
 
                 <button class="navbar-toggler float-right" type="button" data-toggle="collapse"
@@ -471,16 +476,9 @@
 
                 </div>
 
+                <div class="desktop-logo"></div>
+
                 <ul class="navbar-nav">
-                    <li>
-
-                    </li>
-                    <li>
-
-                    </li>
-                    <li>
-
-                    </li>
                     <li>
                         <a href="index.html">Home</a>
                     </li>
@@ -701,6 +699,14 @@
             </div>
         </div>
     </div>
+
+    <div class="video-container">
+        <video autoplay muted loop width="100%">
+            <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4" />
+        </video>
+    </div>
+    
+
     <!-- banner area end -->
     <!-- search area start -->
     <!-- <div class="search-area tp-main-search-area tp-main-search-3">
@@ -767,24 +773,7 @@
             </div> -->
 
             <!-- Start video hero -->
-            <div class="video-hero jquery-background-video-wrapper demo-video-wrapper">
-                <video class="jquery-background-video" autoplay muted loop
-                    poster="https://d2ezlykacdqcnj.cloudfront.net/_assets/home-video/beach-waves-loop.jpg">
-                    <source src="https://d2ezlykacdqcnj.cloudfront.net/_assets/home-video/beach-waves-loop.mp4"
-                        type="video/mp4">
-                    <source src="https://d2ezlykacdqcnj.cloudfront.net/_assets/home-video/beach-waves-loop.webm"
-                        type="video/webm">
-                    <source src="https://d2ezlykacdqcnj.cloudfront.net/_assets/home-video/beach-waves-loop.ogv"
-                        type="video/ogg">
-                </video>
-                <div class="video-overlay"></div>
-                <div class="page-width">
-                    <div class="video-hero--content">
-                        <h2>Background Video Demo</h2>
-                        <p>Full width video hero</p>
-                    </div>
-                </div>
-            </div>
+         
             <!-- End video hero -->
 
             <!-- <div id="content">
