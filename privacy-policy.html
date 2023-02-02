@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Manzaras - About Us</title>
+    <title>Manzaras - Privacy Policy </title>
     <!-- favicon -->
     <link rel=icon href="assets/img/1.png" sizes="20x20" type="image/png">
     <!-- Additional plugin css -->
@@ -27,6 +27,93 @@
     <link rel="stylesheet" href="assets/css/responsive.css">
 
     <style type="text/css">
+        .float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 90px;
+            right: 27px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+        }
+
+        .my-float {
+            margin-top: 16px;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 10;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 30%;
+        }
+
+        .logo-text {
+            display: contents;
+            color: rgb(255, 255, 255);
+            font-size: 30px;
+            font-family: 'Slabo';
+            font-weight: 100;
+            padding: 0 20px;
+            position: absolute;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .modal-content {
+                width: 90%;
+            }
+
+            .logo-text {
+                color: rgb(67, 128, 214);
+                font-size: 20px;
+            }
+        }
+
+        .close {
+            color: #000;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* Settings - feel free to play with these */
+        /* $overlay_opacity: 0.3; // 0-1 */
+        /* $overlay_pattern: 'https://d3k5xyayaartr5.cloudfront.net/_assets/pattern-overlays/patterns/black-medium-checks.png'; // Grab the url of a png from here - http://html5backgroundvideos.com/pattern-overlays/ */
+
+        @import url(https://fonts.googleapis.com/css?family=Roboto:400,700);
+
+
         * {
             margin: 0;
             padding: 0;
@@ -35,7 +122,6 @@
 
         h1 {
             color: #00F;
-            font-family: "Comic Sans MS";
             font-style: normal;
             font-weight: bold;
             text-decoration: none;
@@ -44,7 +130,6 @@
 
         .s1 {
             color: black;
-            font-family: "Comic Sans MS";
             font-style: normal;
             font-weight: bold;
             text-decoration: none;
@@ -53,7 +138,6 @@
 
         p {
             color: black;
-            font-family: "Comic Sans MS";
             font-style: normal;
             font-weight: normal;
             text-decoration: none;
@@ -64,7 +148,6 @@
         .a,
         a {
             color: black;
-            font-family: "Comic Sans MS";
             font-style: normal;
             font-weight: normal;
             text-decoration: none;
@@ -73,7 +156,6 @@
 
         .s2 {
             color: black;
-            font-family: "Comic Sans MS";
             font-style: normal;
             font-weight: bold;
             text-decoration: none;
@@ -100,7 +182,6 @@
 
         .s4 {
             color: #202120;
-            font-family: "Comic Sans MS";
             font-style: normal;
             font-weight: normal;
             text-decoration: none;
@@ -109,7 +190,6 @@
 
         .s5 {
             color: #202120;
-            font-family: "Comic Sans MS";
             font-style: normal;
             font-weight: normal;
             text-decoration: none;
@@ -118,7 +198,6 @@
 
         h4 {
             color: #202120;
-            font-family: "Comic Sans MS";
             font-style: normal;
             font-weight: bold;
             text-decoration: none;
@@ -127,7 +206,6 @@
 
         .s6 {
             color: black;
-            font-family: "Comic Sans MS";
             font-style: normal;
             font-weight: normal;
             text-decoration: underline;
@@ -136,7 +214,6 @@
 
         .s7 {
             color: #202120;
-            font-family: "Comic Sans MS";
             font-style: normal;
             font-weight: normal;
             text-decoration: none;
@@ -145,7 +222,6 @@
 
         h3 {
             color: black;
-            font-family: "Comic Sans MS";
             font-style: normal;
             font-weight: bold;
             text-decoration: none;
@@ -417,7 +493,6 @@
             counter-increment: d2;
             content: counter(d1, decimal)"." counter(d2, decimal)" ";
             color: black;
-            font-family: "Comic Sans MS";
             font-style: normal;
             font-weight: normal;
             text-decoration: none;
@@ -581,7 +656,6 @@
             counter-increment: e2;
             content: counter(e2, decimal)". ";
             color: #202120;
-            font-family: "Comic Sans MS";
             font-style: normal;
             font-weight: normal;
             text-decoration: none;
@@ -601,7 +675,6 @@
             counter-increment: e2;
             content: counter(e2, decimal)". ";
             color: #202120;
-            font-family: "Comic Sans MS";
             font-style: normal;
             font-weight: normal;
             text-decoration: none;
@@ -621,7 +694,6 @@
             counter-increment: e2;
             content: counter(e2, decimal)". ";
             color: #202120;
-            font-family: "Comic Sans MS";
             font-style: normal;
             font-weight: normal;
             text-decoration: none;
@@ -641,7 +713,6 @@
             counter-increment: e2;
             content: counter(e2, decimal)". ";
             color: #202120;
-            font-family: "Comic Sans MS";
             font-style: normal;
             font-weight: normal;
             text-decoration: none;
@@ -661,7 +732,6 @@
             counter-increment: e2;
             content: counter(e2, decimal)". ";
             color: #202120;
-            font-family: "Comic Sans MS";
             font-style: normal;
             font-weight: normal;
             text-decoration: none;
@@ -681,7 +751,6 @@
             counter-increment: e2;
             content: counter(e2, decimal)". ";
             color: #202120;
-            font-family: "Comic Sans MS";
             font-style: normal;
             font-weight: normal;
             text-decoration: none;
@@ -701,7 +770,6 @@
             counter-increment: e2;
             content: counter(e2, decimal)". ";
             color: #202120;
-            font-family: "Comic Sans MS";
             font-style: normal;
             font-weight: normal;
             text-decoration: none;
@@ -721,7 +789,6 @@
             counter-increment: e2;
             content: counter(e2, decimal)". ";
             color: #202120;
-            font-family: "Comic Sans MS";
             font-style: normal;
             font-weight: normal;
             text-decoration: none;
@@ -813,7 +880,6 @@
             counter-increment: f1;
             content: counter(f1, lower-latin)". ";
             color: black;
-            font-family: "Comic Sans MS";
             font-style: normal;
             font-weight: normal;
             text-decoration: none;
@@ -1350,6 +1416,10 @@
                         <img src="assets/img/1.png" style="max-width: 45px;" alt="logo">
                     </a>
                 </div>
+                <div class="mobile-logo">
+                    <span class="logo-text">MANZARAS</span>
+                </div>
+
                 <button class="navbar-toggler float-right" type="button" data-toggle="collapse"
                     data-target="#tp_main_menu" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggle-icon">
@@ -1360,14 +1430,16 @@
                 </button>
             </div>
             <div class="collapse navbar-collapse" id="tp_main_menu">
-                <div class="logo-wrapper desktop-logo">
+                <div class="logo-wrapper desktop-logo logo-text">
                     <a href="index.html" class="main-logo">
                         <img src="assets/img/1.png" style="max-width: 100px;" alt="logo">
                     </a>
                     <a href="index.html" class="sticky-logo">
-                        <img src="assets/img/1.png" style="max-width: 80px;" alt="logo">
+                        <img src="assets/img/1.png" style="max-width: 50px;" alt="logo">
                     </a>
+                    <span>MANZARAS</span>
                 </div>
+                <div class="desktop-logo"></div>
                 <ul class="navbar-nav">
                     <li>
                         <a href="index.html">Home</a>
@@ -1449,8 +1521,8 @@
                     <div class="breadcrumb-inner">
                         <h1 class="page-title">Privacy Policy</h1>
                         <ul class="page-list">
-                            <li><a href="index.html">Home</a></li>
-                            <!-- <li>About Us</li> -->
+                            <li><a style="color: #fefefe;" href="index.html">Home</a></li>
+                            <li>Privacy Policy</li>
                         </ul>
                     </div>
                 </div>
@@ -1460,9 +1532,6 @@
     <!-- breadcrumb area End -->
     <div class="intro-area pd-top-75" id="what-we-do">
         <div class="container">
-            <div class="section-title text-center text-left">
-                <h2 class="title text-center"> Core Values</h2>
-            </div>
             <p style="padding-top: 4pt;padding-left: 5pt;text-indent: 0pt;line-height: 114%;text-align: left;"><a
                     href="http://www.manzaras.com/" class="a" target="_blank">Manzaras Hospitality (hereinafter referred
                     as
@@ -1488,8 +1557,9 @@
                 Manzaras’s
                 use of Your personal data we cannot accept Your booking and You should not use the website.</p>
             <p style="text-indent: 0pt;text-align: left;"><br /></p>
-            <h1 style="padding-left: 5pt;text-indent: 0pt;text-align: left;">COLLECTION AND USE OF PERSONAL INFORMATION
-            </h1>
+            <p class="s1" style="padding-left: 5pt;text-indent: 0pt;text-align: left;">COLLECTION AND USE OF PERSONAL
+                INFORMATION
+                </h1>
             <p style="text-indent: 0pt;text-align: left;"><br /></p>
             <p style="padding-left: 5pt;text-indent: 0pt;line-height: 114%;text-align: left;">You may be asked for
                 personal
@@ -1527,8 +1597,9 @@
                 better
                 content.</p>
             <p style="text-indent: 0pt;text-align: left;"><br /></p>
-            <h1 style="padding-left: 5pt;text-indent: 0pt;text-align: left;">PURPOSE OF COLLECTING PERSONAL INFORMATION
-            </h1>
+            <p class="s1" style="padding-left: 5pt;text-indent: 0pt;text-align: left;">PURPOSE OF COLLECTING PERSONAL
+                INFORMATION
+                </h1>
             <p style="text-indent: 0pt;text-align: left;"><br /></p>
             <p style="padding-left: 5pt;text-indent: 0pt;text-align: left;">The predominant purpose in collecting,
                 storing,
@@ -1538,23 +1609,19 @@
                 <li data-list-text="●">
                     <p style="padding-left: 57pt;text-indent: -18pt;text-align: left;">Communicate with You regarding
                         bookings/purchase;</p>
-                    <p style="text-indent: 0pt;text-align: left;"><br /></p>
                 </li>
                 <li data-list-text="●">
                     <p style="padding-left: 57pt;text-indent: -18pt;text-align: left;">Send booking confirmations;</p>
-                    <p style="text-indent: 0pt;text-align: left;"><br /></p>
                 </li>
                 <li data-list-text="●">
                     <p style="padding-left: 57pt;text-indent: -18pt;text-align: left;">Keep You updated regarding
                         transaction
                         status;</p>
-                    <p style="text-indent: 0pt;text-align: left;"><br /></p>
                 </li>
                 <li data-list-text="●">
                     <p style="padding-left: 57pt;text-indent: -18pt;text-align: left;">Sending tour related information
                         on daily
                         basis;</p>
-                    <p style="text-indent: 0pt;text-align: left;"><br /></p>
                 </li>
                 <li data-list-text="●">
                     <p style="padding-left: 57pt;text-indent: -18pt;text-align: left;">Send verification/alert
@@ -1565,24 +1632,20 @@
                     <p style="padding-top: 4pt;padding-left: 57pt;text-indent: -18pt;text-align: left;">Notify and
                         update the
                         changes in bookings.</p>
-                    <p style="text-indent: 0pt;text-align: left;"><br /></p>
                 </li>
                 <li data-list-text="●">
                     <p style="padding-left: 57pt;text-indent: -18pt;text-align: left;">Resolve complaints and disputes.
                     </p>
-                    <p style="text-indent: 0pt;text-align: left;"><br /></p>
                 </li>
                 <li data-list-text="●">
                     <p style="padding-left: 57pt;text-indent: -18pt;text-align: left;">Allow our customer service
                         department to
                         contact You.</p>
-                    <p style="text-indent: 0pt;text-align: left;"><br /></p>
                 </li>
                 <li data-list-text="●">
                     <p style="padding-left: 57pt;text-indent: -18pt;text-align: left;">Detecting and prevent fraudulent
                         or
                         criminal activity.</p>
-                    <p style="text-indent: 0pt;text-align: left;"><br /></p>
                 </li>
                 <li data-list-text="●">
                     <p style="padding-left: 57pt;text-indent: -18pt;line-height: 188%;text-align: left;">Carry out our
@@ -1595,7 +1658,7 @@
                         content
                         from the website is presented in the most effective manner for You.</p>
                     <p style="text-indent: 0pt;text-align: left;"><br /></p>
-                    <h1 style="padding-left: 5pt;text-indent: 0pt;text-align: left;">COOKIES</h1>
+                    <p class="s1" style="padding-left: 5pt;text-indent: 0pt;text-align: left;">COOKIES</h1>
                     <p style="text-indent: 0pt;text-align: left;"><br /></p>
                     <p style="padding-left: 5pt;text-indent: 0pt;line-height: 114%;text-align: left;">This Site uses
                         cookies to
@@ -1720,7 +1783,7 @@
                 </li>
             </ul>
             <p style="text-indent: 0pt;text-align: left;"><br /></p>
-            <h1 style="padding-left: 5pt;text-indent: 0pt;text-align: left;">THIRD PARTY WEBSITE LINKS</h1>
+            <p class="s1" style="padding-left: 5pt;text-indent: 0pt;text-align: left;">THIRD PARTY WEBSITE LINKS</h1>
             <p style="text-indent: 0pt;text-align: left;"><br /></p>
             <p style="padding-left: 5pt;text-indent: 0pt;line-height: 114%;text-align: left;">You may be offered
                 automatic links
@@ -1748,7 +1811,8 @@
                 responsibility or
                 liability for their policies.</p>
             <p style="text-indent: 0pt;text-align: left;"><br /></p>
-            <h1 style="padding-left: 5pt;text-indent: 0pt;text-align: left;">PARTIES WITH WHOM YOUR INFORMATION IS
+            <p class="s1" style="padding-left: 5pt;text-indent: 0pt;text-align: left;">PARTIES WITH WHOM YOUR
+                INFORMATION IS
                 SHARED</h1>
             <p style="padding-top: 4pt;padding-left: 5pt;text-indent: 0pt;line-height: 114%;text-align: left;">In order
                 to
@@ -1786,7 +1850,7 @@
                 if the
                 disclosure is reasonably necessary.</p>
             <p style="text-indent: 0pt;text-align: left;"><br /></p>
-            <h1 style="padding-left: 5pt;text-indent: 0pt;text-align: left;">MARKETING USE</h1>
+            <p class="s1" style="padding-left: 5pt;text-indent: 0pt;text-align: left;">MARKETING USE</h1>
             <p style="text-indent: 0pt;text-align: left;"><br /></p>
             <p style="padding-left: 5pt;text-indent: 0pt;line-height: 114%;text-align: left;">We may use the information
                 generated from an enquiry or a booking/purchase made by You on this website, to contact You by
@@ -1833,7 +1897,8 @@
                 use your photographs captured during Tours to be published on the website for marketing and advertising
                 purpose.
             </p>
-            <h1 style="padding-top: 4pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">DATA PROTECTION AND
+            <p class="s1" style="padding-top: 4pt;padding-left: 5pt;text-indent: 0pt;text-align: left;">DATA PROTECTION
+                AND
                 SECURITY</h1>
             <p style="text-indent: 0pt;text-align: left;"><br /></p>
             <p style="padding-left: 5pt;text-indent: 0pt;line-height: 114%;text-align: left;">Information transmitted
@@ -1864,7 +1929,8 @@
                 we
                 might not be able to provide the services to You.</p>
             <p style="text-indent: 0pt;text-align: left;"><br /></p>
-            <h1 style="padding-left: 5pt;text-indent: 0pt;text-align: left;">INTELLECTUAL PROPERTY RIGHTS (IPR)</h1>
+            <p class="s1" style="padding-left: 5pt;text-indent: 0pt;text-align: left;">INTELLECTUAL PROPERTY RIGHTS
+                (IPR)</h1>
             <p style="text-indent: 0pt;text-align: left;"><br /></p>
             <p style="padding-left: 5pt;text-indent: 0pt;line-height: 114%;text-align: left;">Our products, our ideas
                 and
@@ -1876,7 +1942,7 @@
                 person who attempts to infringe Intellectual Property Rights vested upon us shall face legal
                 consequences.</p>
             <p style="text-indent: 0pt;text-align: left;"><br /></p>
-            <h1 style="padding-left: 5pt;text-indent: 0pt;text-align: left;">AUTHENTICITY OF DATA</h1>
+            <p class="s1" style="padding-left: 5pt;text-indent: 0pt;text-align: left;">AUTHENTICITY OF DATA</h1>
             <p style="text-indent: 0pt;text-align: left;"><br /></p>
             <p style="padding-left: 5pt;text-indent: 0pt;line-height: 114%;text-align: left;">It shall be Your duty to
                 ensure
@@ -1884,7 +1950,8 @@
                 responsible for
                 the authenticity, accuracy and correctness of such information.</p>
             <p style="text-indent: 0pt;text-align: left;"><br /></p>
-            <h1 style="padding-left: 5pt;text-indent: 0pt;text-align: left;">CHANGES TO THIS PRIVACY POLICY</h1>
+            <p class="s1" style="padding-left: 5pt;text-indent: 0pt;text-align: left;">CHANGES TO THIS PRIVACY POLICY
+                </h1>
             <p style="text-indent: 0pt;text-align: left;"><br /></p>
             <p style="padding-left: 5pt;text-indent: 0pt;line-height: 114%;text-align: left;">By opening, browsing,
                 using this
@@ -1900,31 +1967,10 @@
                     inform us by e-mail </a>info@manzaras.com and we will take all the reasonable efforts and steps to
                 promptly
                 determine and resolve the issue.</p>
-
+            <p style="text-indent: 0pt;text-align: left;"><br /></p>
         </div>
     </div>
     <!-- intro area End -->
-    <!-- holiday plan area start -->
-    <div class="holiday-plan-area tp-holiday-plan-area mg-top-96" style="background-image: url(assets/img/bg/8.png);">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-xl-6 col-lg-9">
-                    <div class="section-title text-center">
-                        <!-- <h2 class="title wow animated fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.1s">Our
-                            Principles</h2> -->
-                        <!-- <p class="wow animated fadeInUp" data-wow-duration="0.6s" data-wow-delay="0.2s">No vis fastidii
-                            accumsan, ignota postulant ea mea. Vis et prima integre, ei vis ridens moderatius
-                            reformidans cu vim doctus accumsan ignota.</p> -->
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-
-            </div>
-        </div>
-    </div>
-    <!-- holiday plan area end -->
-
     <!-- footer area start -->
     <footer class="footer-area style-three" style="background-image: url(assets/img/bg/2.png);">
         <div class="container">
