@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Manzaras - cruises</title>
+
+    <!-- favicon -->
+    <link rel=icon href="../assets/img/1.png" sizes="20x20" type="image/png">
+    <!-- Additional plugin css -->
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/animate.css">
+    <link rel="stylesheet" href="../assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="../assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../assets/css/slick.css">
+    <link rel="stylesheet" href="../assets/css/swiper.min.css">
+    <link rel="stylesheet" href="../assets/css/nice-select.css">
+    <link rel="stylesheet" href="../assets/css/jquery-ui.min.css">
+    <!-- icons -->
+    <link rel="stylesheet" href="../assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/themify-icons.css">
+    <link rel="stylesheet" href="../assets/css/line-awesome.min.css">
+    <!-- main css -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- responsive css -->
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <style>
+        input {
+            width: 50vw;
+            height: 30px;
+        }
+
+        select {
+            width: 50vw;
+            height: 30px;
+            border-color: #666;
+            border-radius: 3px;
+        }
+
+        .tncLink {
+            color: #007aff;
+            text-decoration: underline;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 10;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 30%;
+        }
+
+
+        .logo-text {
+            display: contents;
+            color: rgb(255, 255, 255);
+            font-size: 30px;
+            font-family: 'Slabo';
+            font-weight: 100;
+            padding: 0 20px;
+            position: absolute;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .modal-content {
+                width: 90%;
+            }
+
+            .logo-text {
+                color: rgb(67, 128, 214);
+                font-size: 20px;
+            }
+        }
+
+
+        .modal-form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .close {
+            color: #000;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .formInnerDiv {
+            padding: 15px;
+        }
+
+        .formButton {
+            display: flex;
+            justify-content: center;
+        }
+
+        .float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 90px;
+            right: 27px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+        }
+
+        .my-float {
+            margin-top: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- preloader area start -->
+    <!-- <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="spinner">
+                <div class="dot1"></div>
+                <div class="dot2"></div>
+            </div>
+        </div>
+    </div> -->
+    <!-- preloader area end -->
+    <!-- search popup start -->
+    <!-- <div class="body-overlay" id="body-overlay"></div>
+    <div class="search-popup" id="search-popup">
+        <form action="http://zwin.io/html/viaje/index.html" class="search-form">
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search.....">
+            </div>
+            <button type="submit" class="submit-btn"><i class="fa fa-search"></i></button>
+        </form>
+    </div> -->
+    <!-- search popup End -->
+    <!-- //. sign up Popup -->
+    <a href="https://api.whatsapp.com/send?phone=7710906345&text=Hi!" class="float" target="_blank">
+        <i class="fa fa-whatsapp my-float"></i>
+    </a>
+    <div class="signUp-popup login-register-popup" id="signUp-popup">
+        <div class="login-register-popup-wrap">
+            <div class="row no-gutters">
+                <div class="col-lg-6">
+                    <div class="thumb">
+                        <img src="../assets/img/others/signup.png" alt="img">
+                    </div>
+                </div>
+                <div class="col-lg-6 align-self-center">
+                    <div class="shape-thumb">
+                        <img src="../assets/img/others/signup-shape.png" alt="img">
+                    </div>
+                    <form class="login-form-wrap">
+                        <h4 class="text-center">Sign Up</h4>
+                        <div class="single-input-wrap style-two">
+                            <input type="text" placeholder="Name">
+                            <span class="single-input-title"><i class="fa fa-user"></i></span>
+                        </div>
+                        <div class="single-input-wrap style-two">
+                            <input type="text" placeholder="Email">
+                            <span class="single-input-title"><i class="fa fa-envelope"></i></span>
+                        </div>
+                        <div class="single-input-wrap style-two">
+                            <input type="text" placeholder="Password">
+                            <span class="single-input-title"><i class="fa fa-lock"></i></span>
+                        </div>
+                        <label class="checkbox">
+                            <input type="checkbox">
+                            <span>Remember me</span>
+                        </label>
+                        <div class="single-input-wrap style-two">
+                            <button class="btn btn-yellow w-100">Sign Up</button>
+                        </div>
+                        <div class="sign-in-btn">I already have an account. <a href="#">Sign In</a></div>
+                        <div class="social-wrap">
+                            <p>Or Continue With</p>
+                            <ul class="social-icon">
+                                <li>
+                                    <a class="facebook" href="#" target="_blank"><i class="fa fa-facebook  "></i></a>
+                                </li>
+                                <li>
+                                    <a class="twitter" href="#" target="_blank"><i class="fa fa-twitter  "></i></a>
+                                </li>
+                                <li>
+                                    <a class="pinterest" href="#" target="_blank"><i class="fa fa-pinterest"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //. sign up Popup End -->
+    <!-- navbar area start -->
+    <div class="top-navbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 topbar-contact-wrap">
+                    <div class="topbar-contact">
+                        <i class="fa fa-phone"></i>
+                        <span class="title">Support:</span>
+                        <span class="number">(+91) 7710906345</span>
+                    </div>
+
+                </div>
+                <div class="col-lg-6">
+                    <div class="nav-right-content float-right">
+                        <div class="social-wrap">
+                            <!-- <p>Or Continue With</p> -->
+                            <ul class="social-icon">
+                                <li>
+                                    <a class="facebook" href="https://www.facebook.com/manzaras.official"
+                                        target="_blank"><i class="fa fa-facebook  "></i></a>
+                                </li>
+                                <!-- <li>
+                                    <a class="twitter" href="#"><i class="fa fa-twitter  "></i></a>
+                                </li>
+                                <li>
+                                    <a class="pinterest" href="#"><i class="fa fa-pinterest"></i></a>
+                                </li> -->
+                                <li>
+                                    <a class="pinterest"
+                                        href="https://instagram.com/manzaras_official?igshid=YmMyMTA2M2Y="
+                                        target="_blank"><i class="fa fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-area navbar-expand-lg nav-style-03">
+        <div class="container nav-container">
+            <div class="responsive-mobile-menu">
+                <div class="mobile-logo">
+                    <a href="../index.html">
+                        <img src="../assets/img/1.png" style="max-width: 45px;" alt="logo">
+                    </a>
+                </div>
+                <div class="mobile-logo">
+                    <span class="logo-text">MANZARAS</span>
+                </div>
+
+                <button class="navbar-toggler float-right" type="button" data-toggle="collapse"
+                    data-target="#tp_main_menu" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggle-icon">
+                        <span class="line"></span>
+                        <span class="line"></span>
+                        <span class="line"></span>
+                    </span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="tp_main_menu">
+                <div class="logo-wrapper desktop-logo logo-text">
+                    <a href="../index.html" class="main-logo">
+                        <img src="../assets/img/1.png" style="max-width: 100px;" alt="logo">
+                    </a>
+                    <a href="../index.html" class="sticky-logo">
+                        <img src="../assets/img/1.png" style="max-width: 50px;" alt="logo">
+                    </a>
+                    <span>MANZARAS</span>
+                </div>
+                <div class="desktop-logo"></div>
+                <ul class="navbar-nav">
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="../about.html">About Us</a>
+                    </li>
+
+
+                    <li class="menu-item-has-children">
+                        <a href="#">Services</a>
+                        <ul class="sub-menu">
+                            <li><a href="../services/accomodation.html">Accomodations</a></li>
+                            <li><a href="../services/ticketing.html">Ticketing</a></li>
+                            <li><a href="../services/travelling.html">Travelling</a></li>
+                            <li><a href="../services/cruises.html">cruises</a></li>
+                            <li><a href="../services/camping.html">Camping</a></li>
+                            <li><a href="../services/treks.html">Treks</a></li>
+                            <!-- <li><a href="../services/holidays.html">Holidays</a></li> -->
+                        </ul>
+                    </li>
+
+
+                    <li>
+                        <a href="../vacations.html">Vacation's</a>
+                    </li>
+                    <li>
+                        <a href="../faq.html">FAQ's</a>
+                    </li>
+                    <li>
+                        <a href="../contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-right-content">
+                <ul>
+                    <li class="pr-0">
+                        <button class="btn btn-yellow" onclick="callModal();"><span>Book Now<i
+                                    class="la la-arrow-right"></i></span></button>
+                        <!-- <a class="btn btn-yellow" href="#">Book Now <i class="fa fa-paper-plane"></i></a> -->
+                    </li>
+                </ul>
+            </div>
+
+            <div id="formPopup" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="close">X</span>
+                    <iframe
+                        src="https://docs.google.com/forms/d/e/1FAIpQLSeYwMU-_pOZcjFWAUVnZjcTNlU6mpcC1jeg0tXpGc3BDdRqjA/viewform?embedded=true"
+                        width="640" height="2002" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                    <!-- <iframe
+                        src="https://docs.google.com/forms/d/e/1FAIpQLSeOW4uAoX5Jg3eZXhxXYPtjJj3e692R_94pHhPaRcVWiJNsUg/viewform?embedded=true"
+                        width="640" height="1097" frameborder="0" marginheight="0" marginwidth="0">
+                        Loading…
+                    </iframe> -->
+                </div>
+            </div>
+
+            <script>
+                function callModal() {
+                    var modal = document.getElementById("formPopup");
+                    // var btn = document.getElementById("openForm");
+                    var span = document.getElementsByClassName("close")[0];
+                    // btn.onclick = function () {
+                    modal.style.display = "block";
+                    // }
+                    span.onclick = function () {
+                        modal.style.display = "none";
+                    }
+                    window.onclick = function (event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                    }
+                }
+
+            </script>
+        </div>
+    </nav>
+    <!-- navbar area end -->
+    <!-- breadcrumb area start -->
+    <div class="breadcrumb-area style-two jarallax" style="background-image:url(../assets/img/bg/14.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb-inner">
+                        <h1 class="page-title">cruises</h1>
+                        <ul class="page-list">
+                            <li>Services</li>
+                            <li>cruises</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- breadcrumb area End -->
+
+    <!-- services area start -->
+    <div class="blog-area pd-top-120">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="single-blog single-blog-wrap style-two">
+                        <div class="thumb single-blog-left-wrap">
+                            <img src="../assets/img/services/cruises/5.jpg" alt="blog">
+                        </div>
+                        <div class="single-blog-details single-blog-right-wrap">
+                            <!-- <a class="tag" href="#">Europe</a>
+                                     <p class="date">19 September 2019</p> -->
+                            <h4 class="title">Cruises</h4>
+                            <p class="content">Our team is here to help! Get expert advice on exotic cruising
+                                destinations.</p>
+                            <button class="btn btn-yellow" onclick="callModal();"><span>Book Now<i
+                                        class="la la-arrow-right"></i></span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="single-blog style-three">
+                                <div class="thumb">
+                                    <img src="../assets/img/services/cruises/1.jpg" alt="blog">
+                                </div>
+                                <div class="single-blog-details-wrap">
+                                    <div class="single-blog-details text-center">
+                                        <!-- <a class="tag" href="#">Europe</a> -->
+                                        <!-- <p class="date">19 September 2019</p> -->
+                                        <h4 class="title">Mumbai</h4>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="single-blog style-three">
+                                <div class="thumb">
+                                    <img src="../assets/img/services/cruises/2.jpg" alt="blog">
+                                </div>
+                                <div class="single-blog-details-wrap">
+                                    <div class="single-blog-details text-center">
+                                        <!-- <a class="tag" href="#">Europe</a> -->
+                                        <!-- <p class="date">18 September 2019</p> -->
+                                        <h4 class="title">Goa</h4>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="single-blog style-three">
+                                <div class="thumb">
+                                    <img src="../assets/img/services/cruises/3.jpg" alt="blog">
+                                </div>
+                                <div class="single-blog-details-wrap">
+                                    <div class="single-blog-details text-center">
+                                        <!-- <a class="tag" href="#">Europe</a> -->
+                                        <!-- <p class="date">18 September 2019</p> -->
+                                        <h4 class="title">Lakshadweep</h4>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="single-blog style-three">
+                                <div class="thumb">
+                                    <img src="../assets/img/services/cruises/4.jpg" alt="blog">
+                                </div>
+                                <div class="single-blog-details-wrap">
+                                    <div class="single-blog-details text-center">
+                                        <!-- <a class="tag" href="#">Europe</a> -->
+                                        <!-- <p class="date">18 September 2019</p> -->
+                                        <h4 class="title">Kochi</h4>
+                                        <!-- <a class="btn btn-yellow" href="#"><span>Read More<i class="la la-arrow-right"></i></span></a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- services area End -->
+
+
+    <div id="formPopup" class="modal">
+        <div class="modal-content">
+            <span class="close" id="close">X</span>
+            <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLSeOW4uAoX5Jg3eZXhxXYPtjJj3e692R_94pHhPaRcVWiJNsUg/viewform?embedded=true"
+                width="640" height="1097" frameborder="0" marginheight="0" marginwidth="0">
+                Loading…
+            </iframe>
+            <!-- <form class="modal-form" action="./php/send.php" method="post">
+                <h1 id="register">Ask Question</h1>
+                <div class="col-md-8">
+                    <label class="single-input-wrap style-two">
+                        <span class="single-input-title">Name</span>
+                        <input type="text" name="name" id="name" required>
+                    </label>
+                </div>
+                <div class="col-md-8">
+                    <label class="single-input-wrap style-two">
+                        <span class="single-input-title">Email</span>
+                        <input type="email" name="email" required>
+                    </label>
+                </div>
+                <div class="col-md-8">
+                    <label class="single-input-wrap style-two">
+                        <span class="single-input-title">Whatsapp Number</span>
+                        <input type="number" name="mobile" maxlength="10" required>
+                    </label>
+                </div>
+                <div class="col-md-8">
+                    <label class="single-input-wrap style-two">
+                        <span class="single-input-title">Services</span>
+                        <select type="select" id="service" name="service" required>
+                            <option value="" selected disabled hidden>Select an Option</option>
+                            <option value="Accomodation">Accomodation</option>
+                            <option value="Ticketing">Ticketing</option>
+                            <option value="Travelling">Travelling</option>
+                            <option value="Cruise">Cruise</option>
+                            <option value="Camping">Camping</option>
+                            <option value="Trek">Trek</option>
+                            <option value="Holiday">Holiday</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="col-md-8">
+                    <label class="single-input-wrap style-two">
+                        <span class="single-input-title">Subject</span>
+                        <input type="text" name="sub" required>
+                    </label>
+                </div>
+                <div class="col-md-8">
+                    <label class="single-input-wrap style-two">
+                        <span class="single-input-title">Message</span>
+                        <input type="text" name="msg" required>
+                    </label>
+                </div>
+
+                <div class="col-md-8">
+                    <label class="single-input-wrap style-two">                        
+                        <input style="width: 21px; height: fit-content;" type="checkbox" id="scales" name="scales"
+                            required>I hereby accept all <b class="tncLink" id="tnc">Terms and
+                            Conditions</b>
+                    </label>
+                </div>
+
+                <div class="formButton">
+                    <button class="btn btn-yellow" id="openForm">
+                        <span>Submit
+                            <i class="la la-arrow-right"></i></span>
+                    </button>
+                </div>
+            </form> -->
+        </div>
+    </div>
+
+    <div id="tncPopup" class="modal">
+        <div class="modal-content" style="height: 85%;">
+            <span class="close" id="closeTnC">X</span>
+            <embed src="./../assets/files/Cancellation and Refund Policy.pdf" type="application/pdf" frameBorder="0"
+                scrolling="auto" height="95%" width="100%"></embed>
+        </div>
+    </div>
+
+
+    <!-- newslatter area Start -->
+    <div class="newslatter-area pd-top-108">
+        <div class="container">
+
+        </div>
+    </div>
+    <!-- newslatter area End -->
+    <!-- footer area start -->
+    <footer class="footer-area style-three" style="background-image: url(../assets/img/bg/2.png);">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="about_us_widget text-center">
+                        <a href="../index.html" class="footer-logo">
+                            <img src="../assets/img/1.png" alt="footerlogo">
+                        </a>
+                    </div>
+                    <div class="footer-widget widget text-center">
+                        <ul class="widget_nav_menu text-center">
+                            <li><a href="terms-condition.html" target="_blank">Terms &
+                                    Conditions</a></li>
+                            <li><a href="privacy-policy.html" target="_blank">Privacy Policy</a></li>
+                            <li><a href="cancellation-refund.html" target="_blank">Cancellation
+                                    & Refund Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="footer-widget widget text-center">
+                        <div class="widget-contact d-inline-flex">
+                            <p class="telephone text-left">
+                                <i class="fa fa-phone base-color"></i>
+                                <span>
+                                    +091 7710906345
+                                </span>
+                            </p>
+                            <p class="location text-left">
+                                <i class="fa fa-envelope-o"></i>
+                                <span>info@manzaras.com</span>
+                            </p>
+                            <p class="text-left">
+                                <i class="fa fa-map-marker"></i>
+                                <span>Gaondevi, Thane West, Maharashtra - 400602</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-inner border-tp-solid">
+            <div class="container">
+                <div class="copyright-text text-center">
+                    &copy; Manzaras All rights reserved. Designed & Developed <i class="fa fa-heart"></i> by <a href="#"
+                        target="_blank"><span>Probyte Solution, PVT LTD</span></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer area end -->
+    <!-- back to top area start -->
+    <div class="back-to-top">
+        <span class="back-top"><i class="fa fa-angle-up"></i></span>
+    </div>
+    <!-- back to top area end -->
+    <script>
+        function callModal() {
+            var modal = document.getElementById("formPopup");
+            // var btn = document.getElementById("openForm");
+            var span = document.getElementsByClassName("close")[0];
+            // btn.onclick = function () {
+            modal.style.display = "block";
+            // }
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        }
+
+    </script>
+    <script>
+        var tncPopup = document.getElementById("tncPopup");
+        var tncbtn = document.getElementById("tnc");
+        var tncspan = document.getElementById("closeTnC");
+        tncbtn.onclick = function () {
+            tncPopup.style.display = "block";
+        }
+        tncspan.onclick = function () {
+            tncPopup.style.display = "none";
+        }
+        window.onclick = function (event) {
+            if (event.target == tncPopup) {
+                tncPopup.style.display = "none";
+            }
+        }
+    </script>
+    <!-- Additional plugin js -->
+    <script src="../assets/js/jquery-2.2.4.min.js"></script>
+    <script src="../assets/js/popper.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/jquery.magnific-popup.js"></script>
+    <script src="../assets/js/owl.carousel.min.js"></script>
+    <script src="../assets/js/wow.min.js"></script>
+    <script src="../assets/js/slick.js"></script>
+    <script src="../assets/js/waypoints.min.js"></script>
+    <script src="../assets/js/jquery.counterup.min.js"></script>
+    <script src="../assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="../assets/js/isotope.pkgd.min.js"></script>
+    <script src="../assets/js/swiper.min.js"></script>
+    <script src="../assets/js/jquery.nice-select.min.js"></script>
+    <script src="../assets/js/jquery-ui.min.js"></script>
+    <script src="../assets/js/jarallax.min.js"></script>
+    <!-- main js -->
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

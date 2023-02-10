@@ -142,11 +142,30 @@
             width: 30%;
         }
 
+       
+        .logo-text {
+            display: contents;
+            color: rgb(255, 255, 255);
+            font-size: 30px;
+            font-family: 'Slabo';
+            font-weight: 100;
+            padding: 0 20px;
+            position: absolute;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
         @media only screen and (max-width: 768px) {
             .modal-content {
                 width: 90%;
             }
+
+            .logo-text {
+                color: rgb(67, 128, 214);
+                font-size: 20px;
+            }
         }
+
 
         .close {
             color: #000;
@@ -295,6 +314,10 @@
                         <img src="assets/img/1.png" style="max-width: 45px;" alt="logo">
                     </a>
                 </div>
+                <div class="mobile-logo">
+                    <span class="logo-text">MANZARAS</span>
+                </div>
+
                 <button class="navbar-toggler float-right" type="button" data-toggle="collapse"
                     data-target="#tp_main_menu" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggle-icon">
@@ -305,14 +328,16 @@
                 </button>
             </div>
             <div class="collapse navbar-collapse" id="tp_main_menu">
-                <div class="logo-wrapper desktop-logo">
+                <div class="logo-wrapper desktop-logo logo-text">
                     <a href="index.html" class="main-logo">
-                        <img src="assets/img/3.png" style="max-width: 100px;" alt="logo">
+                        <img src="assets/img/1.png" style="max-width: 100px;" alt="logo">
                     </a>
                     <a href="index.html" class="sticky-logo">
-                        <img src="assets/img/1.png" style="max-width: 80px;" alt="logo">
+                        <img src="assets/img/1.png" style="max-width: 50px;" alt="logo">
                     </a>
+                    <span>MANZARAS</span>
                 </div>
+                <div class="desktop-logo"></div>
                 <ul class="navbar-nav">
                     <li>
                         <a href="index.html">Home</a>
@@ -328,7 +353,7 @@
                             <li><a href="services/accomodation.html">Accomodations</a></li>
                             <li><a href="services/ticketing.html">Ticketing</a></li>
                             <li><a href="services/travelling.html">Travelling</a></li>
-                            <li><a href="services/cruisess.html">Cruisess</a></li>
+                            <li><a href="services/cruises.html">cruises</a></li>
                             <li><a href="services/camping.html">Camping</a></li>
                             <li><a href="services/treks.html">Treks</a></li>
                             <li><a href="services/holidays.html">Holidays</a></li>
@@ -1378,14 +1403,11 @@
                     </div>
                     <div class="footer-widget widget text-center">
                         <ul class="widget_nav_menu text-center">
-                            <!-- <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About Us</a></li> -->
-                            <li><a href="./assets/files/Website Terms & Conditions.pdf" target="_blank">Terms &
+                            <li><a href="terms-condition.html" target="_blank">Terms &
                                     Conditions</a></li>
-                            <li><a href="./assets/files/Privacy Policy.pdf" target="_blank">Privacy Policy</a></li>
-                            <li><a href="./assets/files/Cancellation and Refund Policy.pdf" target="_blank">Cancellation
+                            <li><a href="privacy-policy.html" target="_blank">Privacy Policy</a></li>
+                            <li><a href="cancellation-refund.html" target="_blank">Cancellation
                                     & Refund Policy</a></li>
-                            <!-- <li><a href="contact.html">Contact Us</a></li> -->
                         </ul>
                     </div>
                 </div>
