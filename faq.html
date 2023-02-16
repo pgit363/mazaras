@@ -68,27 +68,38 @@
             width: 30%;
         }
 
-       
+
         .logo-text {
             display: contents;
             color: rgb(255, 255, 255);
             font-size: 30px;
-            font-family: 'Slabo';
+            font-family: 'Playfair Display', 'serif';
             font-weight: 100;
             padding: 0 20px;
             position: absolute;
             text-align: center;
             text-transform: uppercase;
         }
+  .footer-logo-tagline {
+            color: rgba(255, 255, 255, 0.75);
+            font-weight: 500;
+            font-size: 25px;
+        }
 
         @media only screen and (max-width: 768px) {
             .modal-content {
-                width: 90%;
+                width: 70%;
             }
 
             .logo-text {
-                color: rgb(67, 128, 214);
+                color: #0bcbef;
                 font-size: 20px;
+            }
+
+            .footer-logo-tagline {
+                color: rgba(255, 255, 255, 0.75);
+                font-weight: 500;
+                font-size: 16px;
             }
         }
 
@@ -107,6 +118,13 @@
             color: #000;
             text-decoration: none;
             cursor: pointer;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 16px;
+            line-height: 1.4;
+            color: #666;
         }
     </style>
 </head>
@@ -275,7 +293,8 @@
                             <li><a href="services/accomodation.html">Accomodations</a></li>
                             <li><a href="services/ticketing.html">Ticketing</a></li>
                             <li><a href="services/travelling.html">Travelling</a></li>
-                            <li><a href="services/cruises.html">cruises</a></li>
+                            <li><a href="services/cruises.html">Cruises</a></li>
+
                             <li><a href="services/camping.html">Camping</a></li>
                             <li><a href="services/treks.html">Treks</a></li>
                             <!-- <li><a href="../services/holidays.html">Holidays</a></li> -->
@@ -295,7 +314,7 @@
             <div class="nav-right-content">
                 <ul>
                     <li class="pr-0">
-                        <button class="btn btn-yellow" onclick="callModal();"><span>Book Now<i
+                        <button class="btn btn-yellow" onclick="callModal();"><span>Enquire Now<i
                                     class="la la-arrow-right"></i></span></button>
                         <!-- <a class="btn btn-yellow" href="#">Book Now <i class="fa fa-paper-plane"></i></a> -->
                     </li>
@@ -306,10 +325,8 @@
                 <div class="modal-content">
                     <span class="close" id="close">X</span>
                     <iframe
-                        src="https://docs.google.com/forms/d/e/1FAIpQLSeOW4uAoX5Jg3eZXhxXYPtjJj3e692R_94pHhPaRcVWiJNsUg/viewform?embedded=true"
-                        width="640" height="1097" frameborder="0" marginheight="0" marginwidth="0">
-                        Loading…
-                    </iframe>
+                        src="https://docs.google.com/forms/d/e/1FAIpQLSexs5WzYQrfJGMG5Yz3q730fwqmQkURKqt_mOzQO-Ewm2vZMg/viewform?embedded=true"
+                        width="740" height="2015" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
                 </div>
             </div>
 
@@ -1213,10 +1230,13 @@
             <div class="row justify-content-center">
                 <div class="col-12">
                     <div class="about_us_widget text-center">
-                        <a href="index.html" class="footer-logo">
-                            <img src="assets/img/1.png" alt="footerlogo">
-                        </a>
-                    </div>
+                            <a href="index.html" class="footer-logo">
+                                <img src="assets/img/1.png" alt="footerlogo">
+                                <span class="row justify-content-center footer-logo-tagline">
+                                    Travel in Style, Mile for Miles
+                                </span>
+                            </a>
+                        </div>
                     <div class="footer-widget widget text-center">
                         <ul class="widget_nav_menu text-center">
                             <li><a href="terms-condition.html" target="_blank">Terms &

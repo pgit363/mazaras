@@ -50,7 +50,7 @@ Version: 1.0.0
   --heading-color: #071C55;
   --paragraph-color: #666;
   --heading-font: 'Playfair Display', serif;
-  --body-font: 'Poppins', sans-serif;
+  --body-font: 'Times New Roman', Times, serif;
   --body-font-size: 15px;
   --body-font-width: 400;
   --body-line-height: 32px;
@@ -1590,6 +1590,7 @@ ul.wp-block-latest-posts.is-grid.alignwide {
   padding: 186px 0 112px;
   background-size: cover;
   position: relative;
+  height: 60vh;
 }
 
 .breadcrumb-area:after {
