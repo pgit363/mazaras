@@ -80,7 +80,8 @@
             text-align: center;
             text-transform: uppercase;
         }
-  .footer-logo-tagline {
+
+        .footer-logo-tagline {
             color: rgba(255, 255, 255, 0.75);
             font-weight: 500;
             font-size: 25px;
@@ -353,7 +354,7 @@
             <div class="nav-right-content">
                 <ul>
                     <li class="pr-0">
-                        <button class="btn btn-yellow" onclick="callModal();"><span>Enquire Now<i
+                        <button class="btn btn-yellow" onclick="callModal(1);"><span>Enquire Now<i
                                     class="la la-arrow-right"></i></span></button>
                         <!-- <a class="btn btn-yellow" href="#">Book Now <i class="fa fa-paper-plane"></i></a> -->
                     </li>
@@ -369,30 +370,12 @@
                 </div>
             </div>
 
-            <script>
-                function callModal() {
-                    var modal = document.getElementById("formPopup");
-                    // var btn = document.getElementById("openForm");
-                    var span = document.getElementsByClassName("close")[0];
-                    // btn.onclick = function () {
-                    modal.style.display = "block";
-                    // }
-                    span.onclick = function () {
-                        modal.style.display = "none";
-                    }
-                    window.onclick = function (event) {
-                        if (event.target == modal) {
-                            modal.style.display = "none";
-                        }
-                    }
-                }
-
-            </script>
         </div>
     </nav>
     <!-- navbar area end -->
     <!-- breadcrumb area start -->
-    <div class="breadcrumb-area style-two jarallax" style="background-image:url(../assets/img/services/travelling/Horizontal.jpg);">
+    <div class="breadcrumb-area style-two jarallax"
+        style="background-image:url(../assets/img/services/travelling/Horizontal.jpg);">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -424,9 +407,43 @@
                             <h4 class="title">Travelling</h4>
                             <p class="content">Describe your requirements to us and we'll provide you with the cheapest
                                 rates for rentals.</p>
-                            <button class="btn btn-yellow" onclick="callModal();"><span>Enquire Now<i
+                            <button class="btn btn-yellow" onclick="callModal(2);"><span>Enquire Now<i
                                         class="la la-arrow-right"></i></span></button>
                         </div>
+
+                        <div id="ticketForm" class="modal">
+                            <div class="modal-content">
+                                <span class="close" id="close">X</span>
+                                <iframe
+                                    src="https://docs.google.com/forms/d/e/1FAIpQLSf4BpuZj4M8kTq9IQwEE_j9w5PcCe35OLwHZU0aS4NXEBsEQA/viewform?embedded=true"
+                                    width="640" height="2120" frameborder="0" marginheight="0"
+                                    marginwidth="0">Loading…</iframe>
+                            </div>
+                        </div>
+
+                        <script>
+                            function callModal(flag) {
+                                if (flag == 1) {
+                                    var modal = document.getElementById("formPopup");
+                                } else {
+                                    var modal = document.getElementById("ticketForm");
+                                }
+                                // var btn = document.getElementById("openForm");
+                                var span = document.getElementsByClassName("close")[0];
+                                // btn.onclick = function () {
+                                modal.style.display = "block";
+                                // }
+                                span.onclick = function () {
+                                    modal.style.display = "none";
+                                }
+                                window.onclick = function (event) {
+                                    if (event.target == modal) {
+                                        modal.style.display = "none";
+                                    }
+                                }
+                            }
+
+                        </script>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -594,7 +611,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12">
-                      <div class="about_us_widget text-center">
+                    <div class="about_us_widget text-center">
                         <a href="../index.html" class="footer-logo">
                             <img src="../assets/img/1.png" alt="footerlogo">
                             <span class="row justify-content-center footer-logo-tagline">
@@ -651,41 +668,7 @@
         <span class="back-top"><i class="fa fa-angle-up"></i></span>
     </div>
     <!-- back to top area end -->
-    <script>
-        function callModal() {
-            var modal = document.getElementById("formPopup");
-            // var btn = document.getElementById("openForm");
-            var span = document.getElementsByClassName("close")[0];
-            // btn.onclick = function () {
-            modal.style.display = "block";
-            // }
-            span.onclick = function () {
-                modal.style.display = "none";
-            }
-            window.onclick = function (event) {
-                if (event.target == modal) {
-                    modal.style.display = "none";
-                }
-            }
-        }
 
-    </script>
-    <script>
-        var tncPopup = document.getElementById("tncPopup");
-        var tncbtn = document.getElementById("tnc");
-        var tncspan = document.getElementById("closeTnC");
-        tncbtn.onclick = function () {
-            tncPopup.style.display = "block";
-        }
-        tncspan.onclick = function () {
-            tncPopup.style.display = "none";
-        }
-        window.onclick = function (event) {
-            if (event.target == tncPopup) {
-                tncPopup.style.display = "none";
-            }
-        }
-    </script>
     <!-- Additional plugin js -->
     <script src="../assets/js/jquery-2.2.4.min.js"></script>
     <script src="../assets/js/popper.min.js"></script>
